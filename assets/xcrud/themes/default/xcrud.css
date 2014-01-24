@@ -1,0 +1,1216 @@
+.xcrud{
+    font-size: 13px;
+    line-height: 22px;
+    border: 1px solid #bbb;
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #222;
+    width: 100%;
+    min-width: 300px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px rgba(100,100,100,0.08);
+}
+.xcrud .xcrud{
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    box-shadow: none;
+}
+.xcrud-container{
+    position: relative;
+}
+.xcrud .xcrud-header{
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+    background: #eeeeee;
+    background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc));
+    background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%);
+    background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%);
+    background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%);
+    background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
+}
+.xcrud .xcrud-inner-header{
+    padding: 10px;
+    font-size: 14px;
+    color: #999;
+    margin: 0;
+    line-height: 1.5;
+}
+.xcrud .xcrud-list-container{
+    overflow-x: scroll;
+}
+.xcrud .xcrud-toggle{
+    float: right;
+    display: block;
+    background: 0 0 no-repeat transparent url(img/up_arrow_16x16.png);
+    width: 16px;
+    height: 16px;
+    margin-top: 7px;
+}
+.xcrud .xcrud-toggle.closed{
+    background: 0 0 no-repeat transparent url(img/down_arrow_16x16.png);
+}
+.xcrud .xcrud-toggle:hover{
+    background-image: url(img/up_arrow_16x16_h.png);
+}
+.xcrud .xcrud-toggle.closed:hover{
+    background-image: url(img/down_arrow_16x16_h.png);
+}
+.xcrud .xcrud-top-actions{
+    background: #f5f5f5;
+    height: 26px;
+    line-height: 26px;
+    border-bottom: 1px solid #ddd;
+    padding: 0 1px;
+}
+.xcrud .xcrud-list{
+    border-spacing: 0;
+    margin: 0;
+    border-collapse: collapse;
+    min-width: 100%;
+    width: auto;
+    table-layout:fixed;
+}
+.xcrud .xcrud-list th,.xcrud .xcrud-list td{
+    border: 1px solid #fff;
+    border-top: 0;
+    vertical-align: middle;
+    padding: 2px 10px 2px;
+    background: #eee;
+    overflow:hidden;
+    white-space:nowrap;
+    font-weight: normal;
+    vertical-align: top;
+}
+.xcrud .xcrud-list th{
+    color: #555;
+}
+.xcrud .xcrud-list th.primary{
+    font-weight: bold;
+}
+.xcrud .xcrud-list .xcrud-row-0 td{
+    background: #fff;
+}
+.xcrud .xcrud-list .xcrud-row-0 td.xcrud-current{
+    background: #eee;
+}
+.xcrud .xcrud-list .xcrud-row-1 td.xcrud-current{
+    background: #ddd;
+}
+.xcrud .xcrud-list td.xcrud-num,.xcrud .xcrud-list th.xcrud-num{
+    color: #aaa;
+    text-align: right;
+    border-left: none;
+}
+.xcrud .xcrud-list td.xcrud-actions,.xcrud .xcrud-list th.xcrud-actions{
+    border-right: none;
+    min-width: 47px;
+    text-align: right;
+}
+.xcrud .xcrud-list th.xcrud-column{
+    text-align: center;
+    cursor: pointer;
+    background: #ededed 0 0 repeat-x url(img/th_def.png);
+}
+.xcrud .xcrud-list th.xcrud-column:hover{
+    border-bottom-color: #EE9401;
+}
+.xcrud .xcrud-list th.xcrud-column.xcrud-current.asc{
+    background: #eee 0 0 repeat-x url(img/th_asc.png);
+}
+.xcrud .xcrud-list th.xcrud-column.xcrud-current.desc{
+    background: #ccc 0 0 repeat-x url(img/th_desc.png);
+}
+.xcrud .xcrud-list th.xcrud-column{
+    min-width: 80px;
+    max-width: 350px;
+}
+.xcrud-overlay{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #fff 50% 50% no-repeat url(img/loading.gif);
+}
+.xcrud td.xcrud-actions{
+    text-align: right;
+}
+.xcrud .xcrud-actions a{
+    display: inline-block;
+    line-height: 16px;
+    height: 16px;
+    width: 16px;
+    zoom:1;
+    vertical-align: top;
+    margin: 4px 3px 0;
+}
+.xcrud .xcrud-clone{
+    background: transparent 0 0 no-repeat url(img/round_add_16x16.png);
+}
+.xcrud .xcrud-clone:hover{
+    background-image: url(img/round_add_16x16_h.png);
+}
+.xcrud .xcrud-edit{
+    background: transparent 0 0 no-repeat url(img/edit_16x16.png);
+}
+.xcrud .xcrud-edit:hover{
+    background-image: url(img/edit_16x16_h.png);
+}
+.xcrud .xcrud-detail-view{
+    background: transparent 0 0 no-repeat url(img/camera_16x16.png);
+}
+.xcrud .xcrud-detail-view:hover{
+    background-image: url(img/camera_16x16_h.png);
+}
+.xcrud .xcrud-remove{
+    background: transparent 0 0 no-repeat url(img/delete_16x16.png);
+}
+.xcrud .xcrud-remove:hover{
+    background-image: url(img/delete_16x16_h.png);
+}
+.xcrud .xcrud-list .xcrud-row-0:hover td,.xcrud .xcrud-list .xcrud-row-1:hover td{
+    background: #d1d1d1;
+    border-bottom-color: #bbb;
+}
+.xcrud .xcrud-nav{
+    height: 24px;
+    padding: 5px 10px 5px;
+    border-top: 1px solid #ccc;
+    background: #d8d8d8;
+    background: -moz-linear-gradient(top,  #d8d8d8 1%, #efefef 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#d8d8d8), color-stop(100%,#efefef));
+    background: -webkit-linear-gradient(top,  #d8d8d8 1%,#efefef 100%);
+    background: -o-linear-gradient(top,  #d8d8d8 1%,#efefef 100%);
+    background: -ms-linear-gradient(top,  #d8d8d8 1%,#efefef 100%);
+    background: linear-gradient(to bottom,  #d8d8d8 1%,#efefef 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8d8d8', endColorstr='#efefef',GradientType=0 );
+
+}
+.xcrud .xcrud-pagination{
+    margin: 0 30px;
+    display: inline-block;
+}
+.xcrud .xcrud-pagination ul,.xcrud .xcrud-pagination li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline;
+}
+.xcrud .xcrud-pagination a,.xcrud .xcrud-pagination span{
+    display: inline-block;
+    zoom:1;
+    padding: 0 8px 2px;
+    margin: 0 2px;
+    border: 1px solid #bbb;
+    color: #555;
+    text-decoration: none;
+    line-height: 16px;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px rgba(120,120,120,0.1);
+}
+.xcrud .xcrud-pagination a:hover{
+    /*background: #eaeaea;*/
+    border-bottom-color: #EE9401;
+}
+.xcrud .xcrud-pagination span{
+    background: #eee;
+    color: #aaa;
+}
+.xcrud-error{
+    padding: 15px;
+    color: #EE9401;
+    margin: 10px;
+    border: 1px solid #EE9401;
+    border-radius: 2px;
+}
+.xcrud .xcrud-view{
+    padding: 2px 10px 5px;
+    background: #ffffff;
+    background: -moz-linear-gradient(left,  #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed));
+    background: -webkit-linear-gradient(left,  #ffffff 0%,#f6f6f6 47%,#ededed 100%);
+    background: -o-linear-gradient(left,  #ffffff 0%,#f6f6f6 47%,#ededed 100%);
+    background: -ms-linear-gradient(left,  #ffffff 0%,#f6f6f6 47%,#ededed 100%);
+    background: linear-gradient(to right,  #ffffff 0%,#f6f6f6 47%,#ededed 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=1 );
+}
+.xcrud .xcrud-details{
+    width: 100%;
+    border-spacing: 3px;
+    table-layout: fixed;
+}
+.xcrud .xcrud-details td{
+    padding: 0;
+}
+.xcrud .xcrud-details td.xcrud-label{
+    width: 200px;
+    font-size: 12px;
+    font-weight: bold;
+    vertical-align: top;
+    border-bottom: 1px dashed #eee;
+    text-align: right;
+    padding-right: 20px;
+}
+.xcrud .xcrud-details input[type="text"],.xcrud .xcrud-details input[type="password"],.xcrud .xcrud-details textarea,.xcrud .xcrud-details select{
+    width: 100%;
+    margin-left: 0;
+    font-size: 14px;
+    color: #555;
+}
+.xcrud .xcrud-details input[type="checkbox"]{
+    margin-left: 0;
+}
+.xcrud .xcrud-action-button{
+    display: inline-block;
+    line-height: 18px;
+    height: 20px;
+    zoom:1;
+    vertical-align: top;
+    padding: 1px 15px 1px 30px;
+    color: #777;
+    text-decoration: none;
+    margin: 2px 1px 0 0;
+    font-size: 14px;
+    border: none;
+}
+.xcrud .xcrud-action-button:hover{
+    background-color: #fff;
+    padding: 0 14px 0 29px !important;
+    box-shadow: 1px 1px 1px rgba(120,120,120,0.1);
+    border: 1px solid #cbcbcb;
+    padding: 0 inherit;
+    border-bottom-color: #EE9401;
+    background-position: 9px 50%;
+    border-radius: 2px;
+}
+.xcrud .xcrud-add{
+    background: transparent 10px 50% no-repeat url(img/add_16x16.png);
+}
+.xcrud .xcrud-save-new{
+    background: transparent 10px 50% no-repeat url(img/round_ok_16x16.png);
+}
+.xcrud .xcrud-save-return{
+    background: transparent 10px 50% no-repeat url(img/save_16x16.png);
+}
+.xcrud .xcrud-save-edit,.xcrud .xcrud-save{
+    background: transparent 10px 50% no-repeat url(img/check_mark_16x16.png);
+}
+.xcrud .xcrud-return{
+    background: transparent 10px 50% no-repeat url(img/undo_16x16.png);
+}
+.xcrud .xcrud-search-toggle,.xcrud .xcrud-search-go{
+    background: transparent 10px 50% no-repeat url(img/lens_16x16.png);
+}
+.xcrud .xcrud-search-reset{
+    background: transparent 10px 50% no-repeat url(img/cancel_16x16.png);
+}
+.xcrud .xcrud-remove-file{
+    background: transparent 10px 50% no-repeat url(img/delete_16x16.png);
+    vertical-align: bottom;
+}
+.xcrud .xcrud-csv{
+    background: transparent 10px 50% no-repeat url(img/table_16x16.png);
+}
+.xcrud .xcrud-add-file{
+    background: transparent 10px 50% no-repeat url(img/round_up_arrow_16x16.png);
+}
+.xcrud .xcrud-print{
+    background: transparent 10px 50% no-repeat url(img/print_16x16.png);
+}
+.xcrud .xcrud-add:hover{
+    background-image: url(img/add_16x16_h.png);
+}
+.xcrud .xcrud-save-new:hover{
+    background-image: url(img/round_ok_16x16_h.png);
+}
+.xcrud .xcrud-save-return:hover{
+    background-image: url(img/save_16x16_h.png);
+}
+.xcrud .xcrud-save-edit:hover,.xcrud .xcrud-save:hover{
+    background-image: url(img/check_mark_16x16_h.png);
+}
+.xcrud .xcrud-return:hover{
+    background-image: url(img/undo_16x16_h.png);
+}
+.xcrud .xcrud-search-toggle:hover,.xcrud .xcrud-search-go:hover{
+    background-image: url(img/lens_16x16_h.png);
+}
+.xcrud .xcrud-search-reset:hover{
+    background-image: url(img/cancel_16x16_h.png);
+}
+.xcrud .xcrud-remove-file:hover{
+    background-image: url(img/delete_16x16_h.png);
+}
+.xcrud .xcrud-csv:hover{
+    background-image: url(img/table_16x16_h.png);
+}
+.xcrud .xcrud-add-file:hover{
+    background-image: url(img/round_up_arrow_16x16_h.png);
+}
+.xcrud .xcrud-print:hover{
+    background-image: url(img/print_16x16_h.png);
+}
+.xcrud .xcrud-list .xcrud-row-0:hover td.xcrud-actions-fixed,.xcrud .xcrud-list .xcrud-row-1:hover td.xcrud-actions-fixed{
+    position: absolute;
+    right: 0;
+    border-left: none;
+}
+.xcrud tr.error .xcrud-input, .xcrud tr.error td{
+    border-color: #E20101;
+    background-color: #FFE4E4;
+    color: #800101;
+}
+.xcrud .xcrud-file-container.error{
+    border: 1px solid #E20101;
+    background-color: #FFE4E4;
+    padding-left: 5px;
+}
+.xcrud .xcrud-file-container img{
+    max-width: 99%;
+    vertical-align: bottom;
+}
+
+.xcrud-benchmark{
+    font-size: 10px;
+    line-height: 1.1;
+    float: right;
+    color: #999;
+}
+.xcrud-csv-export{
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+.xcrud .xcrud-action-button.xcrud-csv{
+    float: right;
+    cursor: pointer;
+    height: 22px;
+    vertical-align: top;
+    padding-bottom: 3px !important;
+    margin-left: 2px;
+}
+.xcrud-csv:hover{
+    padding: 0 14px 2px 29px !important;
+    background-position: 9px 50%;
+    background-color: #fff;
+}
+*+html .xcrud-csv:hover{
+    border: none !important;
+}
+.xcrud-print{
+    float: right;
+    margin-left: 2px;
+}
+.xcrud .xcrud-file{
+    font-weight: bold;
+    color: #D96E0F;
+    margin: 0 5px 0 0;
+}
+.xcrud-add-file{
+    margin-top: 5px;
+    position: relative;
+    overflow: hidden;
+}
+input.xcrud-upload{
+    cursor: pointer;
+    direction: ltr;
+    font-size: 100%;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(-300px, 0px) scale(4);
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+}
+.xcrud-list .xcrud-image{
+    margin: 0;
+    border-radius: 2px;
+    vertical-align: top;
+}
+.xcrud .xcrud-list td.xcrud-sum{
+    font-weight: bold;
+    background: #eee;
+}
+
+
+
+/* buttons */
+.xcrud-button-link i{
+    display: inline-block;
+    vertical-align: top;
+    background: 0 0 transparent url(img/link_16x16.png);
+    width: 16px;
+    height: 16px;
+}
+.xcrud-button-link.xcrud-tooltip-ui i{
+    vertical-align: middle;
+}
+.xcrud-button-link i:hover{
+    background: 0 0 transparent url(img/link_16x16_h.png);
+}
+.xcrud-button-link i.add{
+    background-image: url(img/add_16x16.png);
+}
+.xcrud-button-link i.add:hover{
+    background-image: url(img/add_16x16_h.png);
+}
+.xcrud-button-link i.address_book{
+    background-image: url(img/address_book_16x16.png);
+}
+.xcrud-button-link i.address_book:hover{
+    background-image: url(img/address_book_16x16_h.png);
+}
+.xcrud-button-link i.alert{
+    background-image: url(img/alert_16x16.png);
+}
+.xcrud-button-link i.alert:hover{
+    background-image: url(img/alert_16x16_h.png);
+}
+.xcrud-button-link i.anchor{
+    background-image: url(img/anchor_16x16.png);
+}
+.xcrud-button-link i.anchor:hover{
+    background-image: url(img/anchor_16x16_h.png);
+}
+.xcrud-button-link i.asterisk{
+    background-image: url(img/asterisk_16x16.png);
+}
+.xcrud-button-link i.asterisk:hover{
+    background-image: url(img/asterisk_16x16_h.png);
+}
+.xcrud-button-link i.attach{
+    background-image: url(img/attach_16x16.png);
+}
+.xcrud-button-link i.attach:hover{
+    background-image: url(img/attach_16x16_h.png);
+}
+.xcrud-button-link i.basket{
+    background-image: url(img/basket_16x16.png);
+}
+.xcrud-button-link i.basket:hover{
+    background-image: url(img/basket_16x16_h.png);
+}
+.xcrud-button-link i.bookmark{
+    background-image: url(img/bookmark_16x16.png);
+}
+.xcrud-button-link i.bookmark:hover{
+    background-image: url(img/bookmark_16x16_h.png);
+}
+.xcrud-button-link i.briefcase{
+    background-image: url(img/briefcase_16x16.png);
+}
+.xcrud-button-link i.briefcase:hover{
+    background-image: url(img/briefcase_16x16_h.png);
+}
+.xcrud-button-link i.browser_window{
+    background-image: url(img/browser_window_16x16.png);
+}
+.xcrud-button-link i.browser_window:hover{
+    background-image: url(img/browser_window_16x16_h.png);
+}
+.xcrud-button-link i.buildings{
+    background-image: url(img/buildings_16x16.png);
+}
+.xcrud-button-link i.buildings:hover{
+    background-image: url(img/buildings_16x16_h.png);
+}
+.xcrud-button-link i.cal{
+    background-image: url(img/cal_16x16.png);
+}
+.xcrud-button-link i.cal:hover{
+    background-image: url(img/cal_16x16_h.png);
+}
+.xcrud-button-link i.calculator{
+    background-image: url(img/calculator_16x16.png);
+}
+.xcrud-button-link i.calculator:hover{
+    background-image: url(img/calculator_16x16_h.png);
+}
+.xcrud-button-link i.camera{
+    background-image: url(img/camera_16x16.png);
+}
+.xcrud-button-link i.camera:hover{
+    background-image: url(img/camera_16x16_h.png);
+}
+.xcrud-button-link i.cancel{
+    background-image: url(img/cancel_16x16.png);
+}
+.xcrud-button-link i.cancel:hover{
+    background-image: url(img/cancel_16x16_h.png);
+}
+.xcrud-button-link i.card{
+    background-image: url(img/card_16x16.png);
+}
+.xcrud-button-link i.card:hover{
+    background-image: url(img/card_16x16_h.png);
+}
+.xcrud-button-link i.cardfile{
+    background-image: url(img/cardfile_16x16.png);
+}
+.xcrud-button-link i.cardfile:hover{
+    background-image: url(img/cardfile_16x16_h.png);
+}
+.xcrud-button-link i.cart{
+    background-image: url(img/cart_16x16.png);
+}
+.xcrud-button-link i.cart:hover{
+    background-image: url(img/cart_16x16_h.png);
+}
+.xcrud-button-link i.cd{
+    background-image: url(img/cd_16x16.png);
+}
+.xcrud-button-link i.cd:hover{
+    background-image: url(img/cd_16x16_h.png);
+}
+.xcrud-button-link i.check_mark{
+    background-image: url(img/check_mark_16x16.png);
+}
+.xcrud-button-link i.check_mark:hover{
+    background-image: url(img/check_mark_16x16_h.png);
+}
+.xcrud-button-link i.clipboard{
+    background-image: url(img/clipboard_16x16.png);
+}
+.xcrud-button-link i.clipboard:hover{
+    background-image: url(img/clipboard_16x16_h.png);
+}
+.xcrud-button-link i.clock{
+    background-image: url(img/clock_16x16.png);
+}
+.xcrud-button-link i.clock:hover{
+    background-image: url(img/clock_16x16_h.png);
+}
+.xcrud-button-link i.comment{
+    background-image: url(img/comment_16x16.png);
+}
+.xcrud-button-link i.comment:hover{
+    background-image: url(img/comment_16x16_h.png);
+}
+.xcrud-button-link i.compress{
+    background-image: url(img/compress_16x16.png);
+}
+.xcrud-button-link i.compress:hover{
+    background-image: url(img/compress_16x16_h.png);
+}
+.xcrud-button-link i.contrast{
+    background-image: url(img/contrast_16x16.png);
+}
+.xcrud-button-link i.contrast:hover{
+    background-image: url(img/contrast_16x16_h.png);
+}
+.xcrud-button-link i.database{
+    background-image: url(img/database_16x16.png);
+}
+.xcrud-button-link i.database:hover{
+    background-image: url(img/database_16x16_h.png);
+}
+.xcrud-button-link i.delete{
+    background-image: url(img/delete_16x16.png);
+}
+.xcrud-button-link i.delete:hover{
+    background-image: url(img/delete_16x16_h.png);
+}
+.xcrud-button-link i.document{
+    background-image: url(img/document_16x16.png);
+}
+.xcrud-button-link i.document:hover{
+    background-image: url(img/document_16x16_h.png);
+}
+.xcrud-button-link i.door{
+    background-image: url(img/door_16x16.png);
+}
+.xcrud-button-link i.door:hover{
+    background-image: url(img/door_16x16_h.png);
+}
+.xcrud-button-link i.down_arrow{
+    background-image: url(img/down_arrow_16x16.png);
+}
+.xcrud-button-link i.down_arrow:hover{
+    background-image: url(img/down_arrow_16x16_h.png);
+}
+.xcrud-button-link i.download{
+    background-image: url(img/download_16x16.png);
+}
+.xcrud-button-link i.download:hover{
+    background-image: url(img/download_16x16_h.png);
+}
+.xcrud-button-link i.downloads_folder{
+    background-image: url(img/downloads_folder_16x16.png);
+}
+.xcrud-button-link i.downloads_folder:hover{
+    background-image: url(img/downloads_folder_16x16_h.png);
+}
+.xcrud-button-link i.edit{
+    background-image: url(img/edit_16x16.png);
+}
+.xcrud-button-link i.edit:hover{
+    background-image: url(img/edit_16x16_h.png);
+}
+.xcrud-button-link i.error{
+    background-image: url(img/error_16x16.png);
+}
+.xcrud-button-link i.error:hover{
+    background-image: url(img/error_16x16_h.png);
+}
+.xcrud-button-link i.expand{
+    background-image: url(img/expand_16x16.png);
+}
+.xcrud-button-link i.expand:hover{
+    background-image: url(img/expand_16x16_h.png);
+}
+.xcrud-button-link i.file{
+    background-image: url(img/file_16x16.png);
+}
+.xcrud-button-link i.file:hover{
+    background-image: url(img/file_16x16_h.png);
+}
+.xcrud-button-link i.film{
+    background-image: url(img/film_16x16.png);
+}
+.xcrud-button-link i.film:hover{
+    background-image: url(img/film_16x16_h.png);
+}
+.xcrud-button-link i.filter{
+    background-image: url(img/filter_16x16.png);
+}
+.xcrud-button-link i.filter:hover{
+    background-image: url(img/filter_16x16_h.png);
+}
+.xcrud-button-link i.flag{
+    background-image: url(img/flag_16x16.png);
+}
+.xcrud-button-link i.flag:hover{
+    background-image: url(img/flag_16x16_h.png);
+}
+.xcrud-button-link i.flash{
+    background-image: url(img/flash_16x16.png);
+}
+.xcrud-button-link i.flash:hover{
+    background-image: url(img/flash_16x16_h.png);
+}
+.xcrud-button-link i.folder{
+    background-image: url(img/folder_16x16.png);
+}
+.xcrud-button-link i.folder:hover{
+    background-image: url(img/folder_16x16_h.png);
+}
+.xcrud-button-link i.gear_wheel{
+    background-image: url(img/gear_wheel_16x16.png);
+}
+.xcrud-button-link i.gear_wheel:hover{
+    background-image: url(img/gear_wheel_16x16_h.png);
+}
+.xcrud-button-link i.globe{
+    background-image: url(img/globe_16x16.png);
+}
+.xcrud-button-link i.globe:hover{
+    background-image: url(img/globe_16x16_h.png);
+}
+.xcrud-button-link i.hard_disk{
+    background-image: url(img/hard_disk_16x16.png);
+}
+.xcrud-button-link i.hard_disk:hover{
+    background-image: url(img/hard_disk_16x16_h.png);
+}
+.xcrud-button-link i.heart{
+    background-image: url(img/heart_16x16.png);
+}
+.xcrud-button-link i.heart:hover{
+    background-image: url(img/heart_16x16_h.png);
+}
+.xcrud-button-link i.hello{
+    background-image: url(img/hello_16x16.png);
+}
+.xcrud-button-link i.hello:hover{
+    background-image: url(img/hello_16x16_h.png);
+}
+.xcrud-button-link i.help{
+    background-image: url(img/help_16x16.png);
+}
+.xcrud-button-link i.help:hover{
+    background-image: url(img/help_16x16_h.png);
+}
+.xcrud-button-link i.house{
+    background-image: url(img/house_16x16.png);
+}
+.xcrud-button-link i.house:hover{
+    background-image: url(img/house_16x16_h.png);
+}
+.xcrud-button-link i.info{
+    background-image: url(img/info_16x16.png);
+}
+.xcrud-button-link i.info:hover{
+    background-image: url(img/info_16x16_h.png);
+}
+.xcrud-button-link i.iphone{
+    background-image: url(img/iphone_16x16.png);
+}
+.xcrud-button-link i.iphone:hover{
+    background-image: url(img/iphone_16x16_h.png);
+}
+.xcrud-button-link i.ipod{
+    background-image: url(img/ipod_16x16.png);
+}
+.xcrud-button-link i.ipod:hover{
+    background-image: url(img/ipod_16x16_h.png);
+}
+.xcrud-button-link i.key{
+    background-image: url(img/key_16x16.png);
+}
+.xcrud-button-link i.key:hover{
+    background-image: url(img/key_16x16_h.png);
+}
+.xcrud-button-link i.key_2{
+    background-image: url(img/key_2_16x16.png);
+}
+.xcrud-button-link i.key_2:hover{
+    background-image: url(img/key_2_16x16_h.png);
+}
+.xcrud-button-link i.keyboard{
+    background-image: url(img/keyboard_16x16.png);
+}
+.xcrud-button-link i.keyboard:hover{
+    background-image: url(img/keyboard_16x16_h.png);
+}
+.xcrud-button-link i.layout{
+    background-image: url(img/layout_16x16.png);
+}
+.xcrud-button-link i.layout:hover{
+    background-image: url(img/layout_16x16_h.png);
+}
+.xcrud-button-link i.left_arrow{
+    background-image: url(img/left_arrow_16x16.png);
+}
+.xcrud-button-link i.left_arrow:hover{
+    background-image: url(img/left_arrow_16x16_h.png);
+}
+.xcrud-button-link i.lens{
+    background-image: url(img/lens_16x16.png);
+}
+.xcrud-button-link i.lens:hover{
+    background-image: url(img/lens_16x16_h.png);
+}
+.xcrud-button-link i.line_chart{
+    background-image: url(img/line_chart_16x16.png);
+}
+.xcrud-button-link i.line_chart:hover{
+    background-image: url(img/line_chart_16x16_h.png);
+}
+.xcrud-button-link i.line_graph{
+    background-image: url(img/line_graph_16x16.png);
+}
+.xcrud-button-link i.line_graph:hover{
+    background-image: url(img/line_graph_16x16_h.png);
+}
+.xcrud-button-link i.link{
+    background-image: url(img/link_16x16.png);
+}
+.xcrud-button-link i.link:hover{
+    background-image: url(img/link_16x16_h.png);
+}
+.xcrud-button-link i.lock{
+    background-image: url(img/lock_16x16.png);
+}
+.xcrud-button-link i.lock:hover{
+    background-image: url(img/lock_16x16_h.png);
+}
+.xcrud-button-link i.magic_wand{
+    background-image: url(img/magic_wand_16x16.png);
+}
+.xcrud-button-link i.magic_wand:hover{
+    background-image: url(img/magic_wand_16x16_h.png);
+}
+.xcrud-button-link i.mail{
+    background-image: url(img/mail_16x16.png);
+}
+.xcrud-button-link i.mail:hover{
+    background-image: url(img/mail_16x16_h.png);
+}
+.xcrud-button-link i.mobile_phone{
+    background-image: url(img/mobile_phone_16x16.png);
+}
+.xcrud-button-link i.mobile_phone:hover{
+    background-image: url(img/mobile_phone_16x16_h.png);
+}
+.xcrud-button-link i.monitor{
+    background-image: url(img/monitor_16x16.png);
+}
+.xcrud-button-link i.monitor:hover{
+    background-image: url(img/monitor_16x16_h.png);
+}
+.xcrud-button-link i.mouse_pointer{
+    background-image: url(img/mouse_pointer_16x16.png);
+}
+.xcrud-button-link i.mouse_pointer:hover{
+    background-image: url(img/mouse_pointer_16x16_h.png);
+}
+.xcrud-button-link i.move{
+    background-image: url(img/move_16x16.png);
+}
+.xcrud-button-link i.move:hover{
+    background-image: url(img/move_16x16_h.png);
+}
+.xcrud-button-link i.music{
+    background-image: url(img/music_16x16.png);
+}
+.xcrud-button-link i.music:hover{
+    background-image: url(img/music_16x16_h.png);
+}
+.xcrud-button-link i.network{
+    background-image: url(img/network_16x16.png);
+}
+.xcrud-button-link i.network:hover{
+    background-image: url(img/network_16x16_h.png);
+}
+.xcrud-button-link i.newspaper{
+    background-image: url(img/newspaper_16x16.png);
+}
+.xcrud-button-link i.newspaper:hover{
+    background-image: url(img/newspaper_16x16_h.png);
+}
+.xcrud-button-link i.no_sound{
+    background-image: url(img/no_sound_16x16.png);
+}
+.xcrud-button-link i.no_sound:hover{
+    background-image: url(img/no_sound_16x16_h.png);
+}
+.xcrud-button-link i.note{
+    background-image: url(img/note_16x16.png);
+}
+.xcrud-button-link i.note:hover{
+    background-image: url(img/note_16x16_h.png);
+}
+.xcrud-button-link i.notebook{
+    background-image: url(img/notebook_16x16.png);
+}
+.xcrud-button-link i.notebook:hover{
+    background-image: url(img/notebook_16x16_h.png);
+}
+.xcrud-button-link i.picture{
+    background-image: url(img/picture_16x16.png);
+}
+.xcrud-button-link i.picture:hover{
+    background-image: url(img/picture_16x16_h.png);
+}
+.xcrud-button-link i.pill{
+    background-image: url(img/pill_16x16.png);
+}
+.xcrud-button-link i.pill:hover{
+    background-image: url(img/pill_16x16_h.png);
+}
+.xcrud-button-link i.print{
+    background-image: url(img/print_16x16.png);
+}
+.xcrud-button-link i.print:hover{
+    background-image: url(img/print_16x16_h.png);
+}
+.xcrud-button-link i.push_pin{
+    background-image: url(img/push_pin_16x16.png);
+}
+.xcrud-button-link i.push_pin:hover{
+    background-image: url(img/push_pin_16x16_h.png);
+}
+.xcrud-button-link i.puzzle{
+    background-image: url(img/puzzle_16x16.png);
+}
+.xcrud-button-link i.puzzle:hover{
+    background-image: url(img/puzzle_16x16_h.png);
+}
+.xcrud-button-link i.redo{
+    background-image: url(img/redo_16x16.png);
+}
+.xcrud-button-link i.redo:hover{
+    background-image: url(img/redo_16x16_h.png);
+}
+.xcrud-button-link i.remove{
+    background-image: url(img/remove_16x16.png);
+}
+.xcrud-button-link i.remove:hover{
+    background-image: url(img/remove_16x16_h.png);
+}
+.xcrud-button-link i.remove_favourite{
+    background-image: url(img/remove_favourite_16x16.png);
+}
+.xcrud-button-link i.remove_favourite:hover{
+    background-image: url(img/remove_favourite_16x16_h.png);
+}
+.xcrud-button-link i.right_arrow{
+    background-image: url(img/right_arrow_16x16.png);
+}
+.xcrud-button-link i.right_arrow:hover{
+    background-image: url(img/right_arrow_16x16_h.png);
+}
+.xcrud-button-link i.round_add{
+    background-image: url(img/round_add_16x16.png);
+}
+.xcrud-button-link i.round_add:hover{
+    background-image: url(img/round_add_16x16_h.png);
+}
+.xcrud-button-link i.round_down_arrow{
+    background-image: url(img/round_down_arrow_16x16.png);
+}
+.xcrud-button-link i.round_down_arrow:hover{
+    background-image: url(img/round_down_arrow_16x16_h.png);
+}
+.xcrud-button-link i.round_left_arrow{
+    background-image: url(img/round_left_arrow_16x16.png);
+}
+.xcrud-button-link i.round_left_arrow:hover{
+    background-image: url(img/round_left_arrow_16x16_h.png);
+}
+.xcrud-button-link i.round_ok{
+    background-image: url(img/round_ok_16x16.png);
+}
+.xcrud-button-link i.round_ok:hover{
+    background-image: url(img/round_ok_16x16_h.png);
+}
+.xcrud-button-link i.round_remove{
+    background-image: url(img/round_remove_16x16.png);
+}
+.xcrud-button-link i.round_remove:hover{
+    background-image: url(img/round_remove_16x16_h.png);
+}
+.xcrud-button-link i.round_right_arrow{
+    background-image: url(img/round_right_arrow_16x16.png);
+}
+.xcrud-button-link i.round_right_arrow:hover{
+    background-image: url(img/round_right_arrow_16x16_h.png);
+}
+.xcrud-button-link i.round_up_arrow{
+    background-image: url(img/round_up_arrow_16x16.png);
+}
+.xcrud-button-link i.round_up_arrow:hover{
+    background-image: url(img/round_up_arrow_16x16_h.png);
+}
+.xcrud-button-link i.rss{
+    background-image: url(img/rss_16x16.png);
+}
+.xcrud-button-link i.rss:hover{
+    background-image: url(img/rss_16x16_h.png);
+}
+.xcrud-button-link i.save{
+    background-image: url(img/save_16x16.png);
+}
+.xcrud-button-link i.save:hover{
+    background-image: url(img/save_16x16_h.png);
+}
+.xcrud-button-link i.scissors{
+    background-image: url(img/scissors_16x16.png);
+}
+.xcrud-button-link i.scissors:hover{
+    background-image: url(img/scissors_16x16_h.png);
+}
+.xcrud-button-link i.script{
+    background-image: url(img/script_16x16.png);
+}
+.xcrud-button-link i.script:hover{
+    background-image: url(img/script_16x16_h.png);
+}
+.xcrud-button-link i.server{
+    background-image: url(img/server_16x16.png);
+}
+.xcrud-button-link i.server:hover{
+    background-image: url(img/server_16x16_h.png);
+}
+.xcrud-button-link i.shield{
+    background-image: url(img/shield_16x16.png);
+}
+.xcrud-button-link i.shield:hover{
+    background-image: url(img/shield_16x16_h.png);
+}
+.xcrud-button-link i.signs_man{
+    background-image: url(img/signs_man_16x16.png);
+}
+.xcrud-button-link i.signs_man:hover{
+    background-image: url(img/signs_man_16x16_h.png);
+}
+.xcrud-button-link i.signs_woman{
+    background-image: url(img/signs_woman_16x16.png);
+}
+.xcrud-button-link i.signs_woman:hover{
+    background-image: url(img/signs_woman_16x16_h.png);
+}
+.xcrud-button-link i.sound{
+    background-image: url(img/sound_16x16.png);
+}
+.xcrud-button-link i.sound:hover{
+    background-image: url(img/sound_16x16_h.png);
+}
+.xcrud-button-link i.star{
+    background-image: url(img/star_16x16.png);
+}
+.xcrud-button-link i.star:hover{
+    background-image: url(img/star_16x16_h.png);
+}
+.xcrud-button-link i.stop{
+    background-image: url(img/stop_16x16.png);
+}
+.xcrud-button-link i.stop:hover{
+    background-image: url(img/stop_16x16_h.png);
+}
+.xcrud-button-link i.tab{
+    background-image: url(img/tab_16x16.png);
+}
+.xcrud-button-link i.tab:hover{
+    background-image: url(img/tab_16x16_h.png);
+}
+.xcrud-button-link i.table{
+    background-image: url(img/table_16x16.png);
+}
+.xcrud-button-link i.table:hover{
+    background-image: url(img/table_16x16_h.png);
+}
+.xcrud-button-link i.tag{
+    background-image: url(img/tag_16x16.png);
+}
+.xcrud-button-link i.tag:hover{
+    background-image: url(img/tag_16x16_h.png);
+}
+.xcrud-button-link i.test2{
+    background-image: url(img/test2_16x16.png);
+}
+.xcrud-button-link i.test2:hover{
+    background-image: url(img/test2_16x16_h.png);
+}
+.xcrud-button-link i.test{
+    background-image: url(img/test_16x16.png);
+}
+.xcrud-button-link i.test:hover{
+    background-image: url(img/test_16x16_h.png);
+}
+.xcrud-button-link i.text{
+    background-image: url(img/text_16x16.png);
+}
+.xcrud-button-link i.text:hover{
+    background-image: url(img/text_16x16_h.png);
+}
+.xcrud-button-link i.toolbox{
+    background-image: url(img/toolbox_16x16.png);
+}
+.xcrud-button-link i.toolbox:hover{
+    background-image: url(img/toolbox_16x16_h.png);
+}
+.xcrud-button-link i.trackback{
+    background-image: url(img/trackback_16x16.png);
+}
+.xcrud-button-link i.trackback:hover{
+    background-image: url(img/trackback_16x16_h.png);
+}
+.xcrud-button-link i.trash{
+    background-image: url(img/trash_16x16.png);
+}
+.xcrud-button-link i.trash:hover{
+    background-image: url(img/trash_16x16_h.png);
+}
+.xcrud-button-link i.tune{
+    background-image: url(img/tune_16x16.png);
+}
+.xcrud-button-link i.tune:hover{
+    background-image: url(img/tune_16x16_h.png);
+}
+.xcrud-button-link i.undo{
+    background-image: url(img/undo_16x16.png);
+}
+.xcrud-button-link i.undo:hover{
+    background-image: url(img/undo_16x16_h.png);
+}
+.xcrud-button-link i.unlock{
+    background-image: url(img/unlock_16x16.png);
+}
+.xcrud-button-link i.unlock:hover{
+    background-image: url(img/unlock_16x16_h.png);
+}
+.xcrud-button-link i.up_arrow{
+    background-image: url(img/up_arrow_16x16.png);
+}
+.xcrud-button-link i.up_arrow:hover{
+    background-image: url(img/up_arrow_16x16_h.png);
+}
+.xcrud-button-link i.user{
+    background-image: url(img/user_16x16.png);
+}
+.xcrud-button-link i.user:hover{
+    background-image: url(img/user_16x16_h.png);
+}
+.xcrud-button-link i.warning{
+    background-image: url(img/warning_16x16.png);
+}
+.xcrud-button-link i.warning:hover{
+    background-image: url(img/warning_16x16_h.png);
+}
+.xcrud-button-link i.workflow{
+    background-image: url(img/workflow_16x16.png);
+}
+.xcrud-button-link i.workflow:hover{
+    background-image: url(img/workflow_16x16_h.png);
+}
+.xcrud-button-link i.wrench{
+    background-image: url(img/wrench_16x16.png);
+}
+.xcrud-button-link i.wrench:hover{
+    background-image: url(img/wrench_16x16_h.png);
+}
+.xcrud-button-link i.zoom_in{
+    background-image: url(img/zoom_in_16x16.png);
+}
+.xcrud-button-link i.zoom_in:hover{
+    background-image: url(img/zoom_in_16x16_h.png);
+}
+.xcrud-button-link i.zoom_out{
+    background-image: url(img/zoom_out_16x16.png);
+}
+.xcrud-button-link i.zoom_out:hover{
+    background-image: url(img/zoom_out_16x16_h.png);
+}
+
+/* column styles */
+.xcrud-list td.align-left{
+    text-align: left
+}
+.xcrud-list td.align-right{
+    text-align: right;
+}
+.xcrud-list td.align-center{
+    text-align: center;
+}
+.xcrud-list td.font-bold{
+    font-weight: bold;
+}
+.xcrud-list td.font-italic{
+    font-style: italic;
+}
+.xcrud-list td.text-underline{
+    text-decoration: underline;
+}
+
+.xcrud .xcrud-daterange{
+    width: 80px;
+}
+.xcrud .xcrud-sp{
+    margin-right: 1px;
+}
+
+.xcrud .xcrud-notice{
+    background: #01B804;
+    color: #fff;
+    text-shadow: 0 1px 0 #000;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    height: 0;
+    box-shadow: 0 1px 1px #ccc;
+    box-shadow: 0 2px 0 rgba(0,0,0,0.2);
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}

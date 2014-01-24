@@ -1,0 +1,209 @@
+.xcrud-list{
+    min-width: 100%;
+    display: table !important;
+    margin-bottom: 3px;
+}
+.xcrud-list th, .xcrud-list td{
+    white-space:nowrap;
+}
+.xcrud-list.table-condensed th, .xcrud-list.table-condensed td {
+    padding: 2px 5px;
+}
+.xcrud-column:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.xcrud-header{
+    font-size: 120%;
+    vertical-align: bottom;
+    margin-left: 10px;
+}
+.xcrud-top-actions{
+    padding: 5px 0;
+}
+.xcrud-container{
+    position: relative;
+}
+.xcrud-list-container{
+    /*overflow-x: scroll;*/
+    clear: both;
+}
+.xcrud-csv-export{
+    margin-bottom: 0;
+}
+.xcrud-nav{
+    padding: 2px 0 0;
+    min-height: 33px;
+}
+.xcrud-nav a{
+    vertical-align: top;
+}
+.xcrud .pagination ul > li > a, .xcrud .pagination ul > li > span{
+    line-height:13px;
+    padding: 4px 10px;
+    font-size: 80%;
+}
+
+.xcrud-nav .xcrud-limit-list, .xcrud-nav input,.xcrud-nav select{
+    font-size: 80%;
+    height: 23px;
+    line-height: 11px;
+    padding: 2px;
+}
+.xcrud-nav input{
+    height: 17px;
+}
+.xcrud-nav input,.xcrud-nav select{
+    vertical-align: top;
+}
+.xcrud{
+    margin-bottom: 20px;
+}
+.xcrud-pagination{
+    margin: 0 20px;
+    vertical-align: top;
+    display: inline-block;
+}
+.xcrud .xcrud-list .xcrud-row-0:hover td.xcrud-actions-fixed,.xcrud .xcrud-list .xcrud-row-1:hover td.xcrud-actions-fixed{
+    /*position: absolute;
+    left: 0px;*/
+}
+.table td.xcrud-label{
+    text-align: right;
+    width: 20%;
+    padding-top: 9px;
+}
+.table td.xcrud-label-view{
+    text-align: right;
+    width: 20%;
+    font-weight: bold;
+}
+.xcrud-details{
+    margin-top: 2px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+td.xcrud-actions{
+    text-align: left;
+}
+.xcrud-actions a{
+    vertical-align: top;
+}
+.xcrud-overlay{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+}
+.xcrud-num{
+    color: #bbb;
+}
+.xcrud-benchmark{
+    margin: -1px 5px;
+    font-size: 9px;
+    line-height: 1.2;
+    float: right;
+    color: #999;
+}
+table.xcrud-details.table td input,table.xcrud-details.table td select,table.xcrud-details.table td textarea{
+    margin-bottom: 0;
+}
+.xcrud .xcrud-remove-file{
+    vertical-align: bottom;
+    margin-left: 5px;
+}
+.xcrud .xcrud-file-container.error{
+    border: 1px solid #E20101;
+    background-color: #FFE4E4;
+    padding-left: 5px;
+}
+.xcrud .xcrud-file-container{
+    font-size: 14px;
+    line-height: 30px;
+}
+.xcrud .xcrud-file-container img{
+    max-width: 99%;
+    vertical-align: bottom;
+}
+.xcrud .xcrud-file{
+    font-weight: bold;
+    color: #D96E0F;
+    margin: 0 5px 0 0;
+}
+.xcrud-add-file{
+    margin-top: 5px;
+    position: relative;
+    overflow: hidden;
+}
+input.xcrud-upload{
+    cursor: pointer;
+    direction: ltr;
+    font-size: 100%;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(-300px, 0px) scale(4);
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+}
+
+.xcrud-list .xcrud-image{
+    margin: 0;
+    border-radius: 2px;
+    vertical-align: top;
+}
+.xcrud-csv,.xcrud-print{
+    margin-left: 5px;
+}
+.xcrud .xcrud-list td.xcrud-sum{
+    font-weight: bold;
+}
+
+/* column styles */
+.xcrud-list td.align-left{
+    text-align: left
+}
+.xcrud-list td.align-right{
+    text-align: right;
+}
+.xcrud-list td.align-center{
+    text-align: center;
+}
+.xcrud-list td.font-bold{
+    font-weight: bold;
+}
+.xcrud-list td.font-italic{
+    font-style: italic;
+}
+.xcrud-list td.text-underline{
+    text-decoration: underline;
+}
+.xcrud .btn-small{
+    padding: 0 7px;
+}
+.xcrud-header .muted{
+    font-weight: normal;
+}
+.xcrud-th th{
+    background: #f7f7f7;
+    background: -moz-linear-gradient(top,  #f7f7f7 0%, #e5e5e5 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#e5e5e5));
+    background: -webkit-linear-gradient(top,  #f7f7f7 0%,#e5e5e5 100%);
+    background: -o-linear-gradient(top,  #f7f7f7 0%,#e5e5e5 100%);
+    background: -ms-linear-gradient(top,  #f7f7f7 0%,#e5e5e5 100%);
+    background: linear-gradient(to bottom,  #f7f7f7 0%,#e5e5e5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#e5e5e5',GradientType=0 );
+}
+.xcrud .nav-tabs li a{
+    padding: 3px 8px;
+}
+
+.xcrud .xcrud-daterange{
+    width: 80px;
+}
+.xcrud .xcrud-sp{
+    margin-right: 1px;
+}
