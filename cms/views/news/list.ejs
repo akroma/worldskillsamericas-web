@@ -1,0 +1,26 @@
+<h2>Existing News Articles</h2>
+<a href="/news/add">New article</a>
+<section id="news">
+<% news.forEach(function(n) { %>
+	<article>
+		<h3><%= n.title %></h3>
+		<img src="<%= n.image_url ? n.image_url : '/images/news/placeholder.png' %>" alt="News Image">
+		<dl>
+			<dt>Author</dt><dd><%= n.author %></dd>
+			<dt>Date</dt><dd><%= n.date() %></dd>
+		</dl>
+		<h4>English Body</h4>
+		<div class='well' lang='en'>
+			<%- n.body_en %>
+		</div>
+		<h4>Spanish Body</h4>
+		<div class='well' lang='es'>
+			<%- n.body_es %>
+		</div>
+		<h4>Portuguese Body</h4>
+		<div class='well' lang='pt'>
+			<%- n.body_pt %>
+		</div>
+	</article>
+<% }) %>
+</section>

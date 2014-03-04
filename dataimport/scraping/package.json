@@ -1,0 +1,22 @@
+{
+  "name": "scraping",
+  "version": "0.0.1",
+  "description": "competitor pictures download from wsa website",
+  "main": "pictures.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "request": "~2.33.0",
+    "cheerio": "~0.13.1",
+    "should": "~3.1.2"
+  },
+  "devDependencies": {
+    "should": "~3.1.2"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "author": "",
+  "license": "ISC"
+}
