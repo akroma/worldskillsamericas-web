@@ -3,19 +3,19 @@
  * Module dependencies.
  */
 
- var express = require('express');
- var routes = require('./routes');
- var http = require('http');
- var path = require('path');
- var news = require('./routes/news');
- var events = require('./routes/events');
- var db = require('./models');
- var formidable = require('formidable');
- var util = require('util');
- var config = require('./config');
- var mkdirp = require('mkdirp');
+var express = require('express');
+var routes = require('./routes');
+var http = require('http');
+var path = require('path');
+var news = require('./routes/news');
+var events = require('./routes/events');
+var db = require('./models');
+var formidable = require('formidable');
+var util = require('util');
+var mkdirp = require('mkdirp');
+var app = express();
+var config = require('./config');
 
- var app = express();
 
 // all environments
 app.set('port', process.env.PORT || config.port || 3000);
@@ -77,6 +77,7 @@ db.sequelize
 		throw err
 	} else {
 		http.createServer(app).listen(app.get('port'), function(){
+			console.log('environment: ' + app.get('env'));
 			console.log('Express server listening on port ' + app.get('port'));
 			console.log('server base url set to ' + config.baseUrl);
 		});

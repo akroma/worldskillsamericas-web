@@ -1,10 +1,11 @@
 var fs        = require('fs')
   , path      = require('path')
+  , config    = require('../config')
   , Sequelize = require('sequelize')
-  , config = require('../config')
   , sequelize = new Sequelize(config.db.name, config.db.user, config.db.password)
   , db        = {}
- 
+
+
 fs
   .readdirSync(__dirname)
   .filter(function(file) {
@@ -14,7 +15,7 @@ fs
     var model = sequelize.import(path.join(__dirname, file))
     db[model.name] = model
   });
- 
+
 Object.keys(db).forEach(function(modelName) {
   if ('associate' in db[modelName]) {
     db[modelName].associate(db)
