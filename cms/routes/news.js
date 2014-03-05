@@ -18,11 +18,12 @@ function formatDate (date) {
 exports.json = function (req, res) {
 	res.set('Content-Type', 'application/json');
 	var dateFilter = null;
-	var lang = req.params.lang
+	var lang = req.query.lang;
+	var date = req.query.since;
 
-	if (req.params.date) {
+	if (date) {
 		dateFilter = function (n) {
-			return formatDate(n.created_at) > req.params.date;
+      return moment(n.created_at).isAfter(date);
 		}
 	}
 	readNews(function (json) {
@@ -46,7 +47,7 @@ exports.json = function (req, res) {
 
 exports.index = function (req, res) {
 	readNews(function (json) {
-		res.render('news/list', json);
+		res.render('news/index', json);
 	});
 };
 

@@ -19,7 +19,7 @@ API
 
 ### Querystring params
 
-- `since=yyyy-mm-ddThh:mm:ss` - Entities since date given, the T is a literal, please use GMT+0
+- `since=yyyy-mm-ddThh:mm:ssZ` - Entities since date given, the T is a literal, using GMT+0
 - `lang=[pt|en|es]` - Locale for `body`
 
 A development version of the server app runs at [http://wsaapp.suicobrasileira.com.br:3000/]()

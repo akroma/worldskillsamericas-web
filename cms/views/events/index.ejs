@@ -1,0 +1,25 @@
+<h2>Existing Events</h2>
+<a href="/events/add">New event</a>
+<section id="events">
+<% events.forEach(function(n) { %>
+	<article>
+		<h3><%= n.body_en %></h3>
+		<dl>
+			<dt>From</dt><dd><%= n.date('start') %></dd>
+			<dt>From</dt><dd><%= n.date('end') %></dd>
+		</dl>
+		<h4>English Description</h4>
+		<div class='well' lang='en'>
+			<%- n.body_en %>
+		</div>
+		<h4>Spanish Description</h4>
+		<div class='well' lang='es'>
+			<%- n.body_es %>
+		</div>
+		<h4>Portuguese Description</h4>
+		<div class='well' lang='pt'>
+			<%- n.body_pt %>
+		</div>
+	</article>
+<% }) %>
+</section>
