@@ -10,15 +10,11 @@ module.exports = function (sequelize, DataTypes) {
 		body_en: DataTypes.STRING,
 		body_es: DataTypes.STRING,
 		body_pt: DataTypes.STRING,
-		start: DataTypes.DATE,
-		end: DataTypes.DATE
+		start: DataTypes.DATE
 	}, {
 		instanceMethods: {
-			date: function (which) {
-				if (which == 'start' || which == 'end') {
-					return format(this.getDataValue(which));
-				}
-				return null;
+			date: function () {
+				return format(this.getDataValue('start'));
 			},
 			i18nBody: function (lang) {
 				return this.getDataValue('body_' + lang);
