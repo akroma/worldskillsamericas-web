@@ -4,6 +4,7 @@ var db = require('../models');
 var moment = require('moment');
 var config = require('../config');
 var util = require('util');
+var dataUtils = require('../lib/data')
 
 function readEvents (cb) {
   db.Event.findAll({ order: 'created_at DESC'}).success(function (result) {
@@ -20,6 +21,7 @@ exports.json = function (req, res) {
   var dateFilter = null;
   var lang = req.query.lang;
   var date = req.query.since;
+  var group = req.query.groupByDay;
 
   if (date) {
     dateFilter = function (n) {
@@ -38,6 +40,11 @@ exports.json = function (req, res) {
     if (dateFilter) {
       json.events = json.events.filter(dateFilter);
     }
+
+    if (group) {
+      json.events = dataUtils.groupByDay(json.events, 'start');
+    }
+
     res.json(json);
   });
 }

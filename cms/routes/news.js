@@ -4,15 +4,12 @@ var db = require('../models');
 var moment = require('moment');
 var config = require('../config');
 var util = require('util');
+var dataUtils = require('../lib/data')
 
 function readNews (cb) {
 	db.News.findAll({ order: 'created_at DESC'}).success(function (result) {
 		cb({news:result});
 	});
-}
-
-function formatDate (date) {
-	return moment(date).format('YYYY-MM-DDThh:mm:ss');
 }
 
 exports.json = function (req, res) {
