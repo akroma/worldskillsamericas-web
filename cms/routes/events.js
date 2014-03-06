@@ -6,7 +6,7 @@ var config = require('../config');
 var util = require('util');
 
 function readEvents (cb) {
-  db.Event.findAll().success(function (result) {
+  db.Event.findAll({ order: 'created_at DESC'}).success(function (result) {
     cb({events:result});
   });
 }
@@ -28,9 +28,6 @@ exports.json = function (req, res) {
   }
   readEvents(function (json) {
     json.events.map(function (n) {
-      // return formatted created_at as date
-      n.dataValues.date = n.date();
-
       if (lang) {
         // return correct i18n body as body
         n.dataValues.body = n.i18nBody(lang);

@@ -6,7 +6,7 @@ var config = require('../config');
 var util = require('util');
 
 function readNews (cb) {
-	db.News.findAll().success(function (result) {
+	db.News.findAll({ order: 'created_at DESC'}).success(function (result) {
 		cb({news:result});
 	});
 }
@@ -60,19 +60,15 @@ exports.add = function (req, res) {
 	function finish () {
 		res.redirect(303, '/news');
 	}
-	function proccessImage (n) {
+	var article = db.News.build(req.body);
+
+	if (req.files.image.size) {
 		var file = req.files.image
 		var filename = path.basename(file.path);
 		n.image_url = baseUrl + filename;
-
-		n.save().success(finish);
-	}
-	if (req.files.image.size) {
-		db.News.create(req.body).success(proccessImage);
 	} else {
 		// no image
-		var article = db.News.build(req.body);
 		article.image_url = baseUrl + "placeholder.png";
-		db.News.create(req.body).success(finish);
+		article.save().success(finish);
 	}
 }

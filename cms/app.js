@@ -19,6 +19,7 @@ var config = require('./config');
 
 // all environments
 app.set('port', process.env.PORT || config.port || 3000);
+app.use(express.compress());
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.set('layout extractScripts', true);
@@ -32,9 +33,7 @@ app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
-if ('development' == app.get('env')) {
-	app.use(express.errorHandler());
-}
+app.use(express.errorHandler());
 
 
 function uploadNewsImage (req, res, next) {
@@ -62,7 +61,7 @@ app.get('/events.json', events.json);
 
 
 // create path for images
-mkdirp('./public/images/news', function (err) {
+mkdirp(__dirname + '/public/images/news', function (err) {
 	if (err){
 		throw err
 	} else {
