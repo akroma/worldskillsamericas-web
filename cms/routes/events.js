@@ -16,38 +16,41 @@ function formatDate (date) {
   return moment(date).format('YYYY-MM-DDTHH:mm:ss');
 }
 
-exports.json = function (req, res) {
-  res.set('Content-Type', 'application/json');
+function transformByParams (entities, queryString) {
   var dateFilter = null;
-  var lang = req.query.lang;
-  var date = req.query.since;
-  var group = req.query.groupByDay;
-
-  if (date) {
+  if (queryString.date) {
     dateFilter = function (n) {
-      return moment(n.created_at).isAfter(date);
+      return moment(n.created_at).isAfter(queryString.date);
     }
   }
+  entities.events.map(function (n) {
+    if (queryString.lang) {
+      // return correct i18n body as body
+      n.dataValues.body = n.i18nBody(queryString.lang);
+    }
+    return n;
+  });
+
+  if (dateFilter) {
+    entities.events = entities.events.filter(dateFilter);
+  }
+
+  if (queryString.group) {
+    entities.events = dataUtils.groupByDay(entities.events, 'start');
+  }
+
+  return entities;
+}
+
+exports.json = function (req, res) {
+  res.set('Content-Type', 'application/json; charset=utf-8');
+  var dateFilter = null;
+  var q = req.query;
   readEvents(function (json) {
-    json.events.map(function (n) {
-      if (lang) {
-        // return correct i18n body as body
-        n.dataValues.body = n.i18nBody(lang);
-      }
-      return n;
-    });
-
-    if (dateFilter) {
-      json.events = json.events.filter(dateFilter);
-    }
-
-    if (group) {
-      json.events = dataUtils.groupByDay(json.events, 'start');
-    }
-
-    res.json(json);
+    res.json(transformByParams(json, q));
   });
 }
+
 
 exports.index = function (req, res) {
   readEvents(function (json) {

@@ -2,7 +2,7 @@ var fs        = require('fs')
   , path      = require('path')
   , config    = require('../config')
   , Sequelize = require('sequelize')
-  , sequelize = new Sequelize(config.db.name, config.db.user, config.db.password)
+  , sequelize = new Sequelize(config.db.name, config.db.user, config.db.password, config.db.options)
   , db        = {}
 
 

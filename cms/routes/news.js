@@ -12,33 +12,38 @@ function readNews (cb) {
 	});
 }
 
-exports.json = function (req, res) {
-	res.set('Content-Type', 'application/json');
+function transformByParams (entities, queryString) {
 	var dateFilter = null;
-	var lang = req.query.lang;
-	var date = req.query.since;
-
-	if (date) {
+	if (queryString.since) {
 		dateFilter = function (n) {
-      return moment(n.created_at).isAfter(date);
+      return moment(n.created_at).isAfter(queryString.since);
 		}
 	}
-	readNews(function (json) {
-		json.news.map(function (n) {
-			// return formatted created_at as date
-			n.dataValues.date = n.date();
+	entities.news.map(function (n) {
+		// return formatted created_at as date
+		n.dataValues.date = n.date();
 
-			if (lang) {
-				// return correct i18n body as body
-				n.dataValues.body = n.i18nBody(lang);
-			}
-			return n;
-		});
-
-		if (dateFilter) {
-			json.news = json.news.filter(dateFilter);
+		if (queryString.lang) {
+			// return correct i18n values
+			n.dataValues.body = n.i18nBody(queryString.lang);
+			n.dataValues.title = n.i18nTitle(queryString.lang);
 		}
-		res.json(json);
+		return n;
+	});
+
+	if (dateFilter) {
+		entities.news = entities.news.filter(dateFilter);
+	}
+	return entities;
+}
+
+exports.json = function (req, res) {
+	res.set('Content-Type', 'application/json; charset=utf-8');
+	var dateFilter = null;
+	var q = req.query;
+
+	readNews(function (json) {
+		res.json(transformByParams(json, q))
 	});
 }
 
@@ -62,10 +67,10 @@ exports.add = function (req, res) {
 	if (req.files.image.size) {
 		var file = req.files.image
 		var filename = path.basename(file.path);
-		n.image_url = baseUrl + filename;
+		article.image_url = baseUrl + filename;
 	} else {
 		// no image
 		article.image_url = baseUrl + "placeholder.png";
-		article.save().success(finish);
 	}
+	article.save().success(finish);
 }

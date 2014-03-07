@@ -17,7 +17,12 @@ module.exports = function (sequelize, DataTypes) {
 				return format(this.getDataValue('start'));
 			},
 			i18nBody: function (lang) {
-				return this.getDataValue('body_' + lang);
+				if (lang == 'pt'
+					|| lang == 'es'
+					|| lang == 'en') {
+					return this.getDataValue('body_' + lang);
+				}
+				return this.getDataValue('body_es');
 			}
 		},
 		underscored: true

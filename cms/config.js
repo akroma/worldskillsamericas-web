@@ -30,7 +30,12 @@ switch(process.env['node_env']) {
     exports.db = {
       user : 'root',
       password : 'Senai115',
-      name : 'wsa'
+      name : 'wsa',
+      options: {dialect: 'mysql'}
+      // options: {
+      //   dialect: 'sqlite',
+      //   storage: '/data/db.sqlite'
+      // }
     };
 
     exports.imageHost = exports.baseUrl;

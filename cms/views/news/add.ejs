@@ -1,9 +1,18 @@
 <h2>New News Article</h2>
 <form action="/news" enctype="multipart/form-data" method="POST">
 	<div class="form-group">
-		<label for="text">Title</label>
-		<input type="text" id="text" name="title" class="form-control">
+		<label for="text">English Title</label>
+		<input type="text" id="text" name="title_en" class="form-control">
 	</div>
+	<div class="form-group">
+		<label for="text">Spanish Title</label>
+		<input type="text" id="text" name="title_es" class="form-control">
+	</div>
+	<div class="form-group">
+		<label for="text">Portuguese Title</label>
+		<input type="text" id="text" name="title_pt" class="form-control">
+	</div>
+
 	<div class="form-group">
 		<label for="author">Author</label>
 		<input id="author" name="author" type="text" class="form-control">

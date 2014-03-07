@@ -3,7 +3,9 @@ var moment = require('moment');
 module.exports = function (sequelize, DataTypes) {
 	var News = sequelize.define('News',
 	{
-		title: DataTypes.STRING,
+		title_en: DataTypes.TEXT,
+		title_es: DataTypes.TEXT,
+		title_pt: DataTypes.TEXT,
 		image_url: DataTypes.STRING,
 		body_en: DataTypes.TEXT,
 		body_es: DataTypes.TEXT,
@@ -16,7 +18,20 @@ module.exports = function (sequelize, DataTypes) {
 				return moment(date).format('YYYY-MM-DD');
 			},
 			i18nBody: function (lang) {
-				return this.getDataValue('body_' + lang);
+				if (lang == 'pt'
+					|| lang == 'es'
+					|| lang == 'en') {
+					return this.getDataValue('body_' + lang);
+				}
+				return this.getDataValue('body_es');
+			},
+			i18nTitle: function (lang) {
+				if (lang == 'pt'
+					|| lang == 'es'
+					|| lang == 'en') {
+					return this.getDataValue('title_' + lang);
+				}
+				return this.getDataValue('title_es');
 			}
 		},
 		underscored: true
