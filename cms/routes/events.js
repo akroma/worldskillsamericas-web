@@ -7,7 +7,7 @@ var util = require('util');
 var dataUtils = require('../lib/data')
 
 function readEvents (cb) {
-  db.Event.findAll({ order: 'created_at DESC'}).success(function (result) {
+  db.Event.findAll({ order: 'start DESC'}).success(function (result) {
     cb({events:result});
   });
 }
