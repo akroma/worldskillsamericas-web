@@ -1,0 +1,10 @@
+{
+  "globals": {
+     "require": false
+    ,"process": false
+    ,"__dirname": false
+    ,"console": false
+    ,"module": false
+    ,"exports": false
+  }
+}

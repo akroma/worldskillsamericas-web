@@ -1,8 +1,7 @@
-
 /**
  * Module dependencies.
  */
-
+'use strict';
 var express = require('express');
 var routes = require('./routes');
 var http = require('http');
@@ -11,7 +10,6 @@ var news = require('./routes/news');
 var events = require('./routes/events');
 var db = require('./models');
 var formidable = require('formidable');
-var util = require('util');
 var mkdirp = require('mkdirp');
 var app = express();
 var config = require('./config');
@@ -32,7 +30,6 @@ app.use(require('express-ejs-layouts'));
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
-// development only
 app.use(express.errorHandler());
 
 
@@ -63,17 +60,26 @@ app.get('/events.json', events.json);
 // create path for images
 mkdirp(__dirname + '/public/images/news', function (err) {
 	if (err){
-		throw err
+		throw err;
 	} else {
 		console.log('News images upload directory created successfully');
 	}
 });
+
 //Initialize sequelize
+
+var syncOpts = {};
+
+// rebuild db for dev
+if (app.get('env') == 'development') {
+	// syncOpts.force = true;
+}
+
 db.sequelize
-.sync() // rebuild db for dev
+.sync(syncOpts)
 .complete(function (err) {
 	if (err) {
-		throw err
+		throw err;
 	} else {
 		http.createServer(app).listen(app.get('port'), function(){
 			console.log('environment: ' + app.get('env'));

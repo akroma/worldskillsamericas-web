@@ -1,7 +1,8 @@
+'use strict';
 var moment = require('moment');
 
 function format (date) {
-	return moment(date).format('YYYY-MM-DD');
+	return moment(date).format('YYYY-MM-DD hh:mm:ss');
 }
 
 module.exports = function (sequelize, DataTypes) {
@@ -17,9 +18,9 @@ module.exports = function (sequelize, DataTypes) {
 				return format(this.getDataValue('start'));
 			},
 			i18nBody: function (lang) {
-				if (lang == 'pt'
-					|| lang == 'es'
-					|| lang == 'en') {
+				if (lang == 'pt' ||
+					lang == 'es' ||
+					lang == 'en') {
 					return this.getDataValue('body_' + lang);
 				}
 				return this.getDataValue('body_es');
@@ -28,4 +29,4 @@ module.exports = function (sequelize, DataTypes) {
 		underscored: true
 	});
 	return Event;
-}
+};

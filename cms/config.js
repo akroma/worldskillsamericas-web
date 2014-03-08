@@ -1,9 +1,15 @@
+'use strict';
 var os = require('os');
+// find out local ip
+function localIp (interfaceName) {
+  var conn = os.networkInterfaces()[interfaceName];
+  return conn.filter(function (addr) {
+    return addr.family == 'IPv4';
+  })[0].address;
+}
 
-switch(process.env['node_env']) {
+switch(process.env.node_env) {
   case 'production':
-    var os = require('os');
-
     exports.port = 3000;
     exports.baseUrl = 'wsaapp.suicobrasileira.com.br:' + exports.port;
 
@@ -18,24 +24,16 @@ switch(process.env['node_env']) {
   default:
     exports.port = 3000;
     exports.interfaceName = 'Ethernet';
-    // find out local ip
-    function localIp () {
-      var conn = os.networkInterfaces()[exports.interfaceName];
-      return conn.filter(function (addr) {
-        return addr.family == 'IPv4';
-      })[0].address;
-    }
-    exports.baseUrl = localIp() + ':' + exports.port;
-
+    exports.baseUrl = localIp(exports.interfaceName) + ':' + exports.port;
     exports.db = {
       user : 'root',
       password : 'Senai115',
       name : 'wsa',
-      options: {dialect: 'mysql'}
-      // options: {
-      //   dialect: 'sqlite',
-      //   storage: '/data/db.sqlite'
-      // }
+      // options: {dialect: 'mysql'}
+      options: {
+        dialect: 'sqlite',
+        storage: __dirname + '/data.db'
+      }
     };
 
     exports.imageHost = exports.baseUrl;
