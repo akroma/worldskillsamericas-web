@@ -3,19 +3,25 @@ var db = require('../models');
 var util = require('util');
 var _ = require('lodash');
 
-var sql = 'SELECT s.number as number' +
-'   , sc.name_es as category' +
-'   , sc.id as categoryId' +
-'   , sc.color as color' +
-'   , p.path as photos' +
-'   , c.name_es as countries' +
-'   , s.image as image' +
-'   , s.name_es as name' +
-' FROM skills s' +
-' left join countriesSkills cs on s.id = cs.skill_id' +
-' left join countries c on cs.country_id = c.id' +
-' left join skillcategories sc on s.skill_category_id = sc.id' +
-' left join pictures p on p.skill_id = s.id';
+var sql = "SELECT s.number as number" +
+"   , sc.name_es as category" +
+"   , sc.id as categoryId" +
+"   , sc.color as color" +
+"   , p.path as photos" +
+"   , c.name_es as countries" +
+"   , s.image as image" +
+"   , s.name_es as name" +
+"   , sd.type as descriptionType" +
+"   , sd.text as description" +
+"   , sc.[order] as [order]" +
+" FROM skills s" +
+" left join countriesSkills cs on s.number = cs.skill_id" +
+" left join countries c on cs.country_id = c.id" +
+" left join skillcategories sc on s.skill_category_id = sc.id" +
+" left join pictures p on p.skill_id = s.number" +
+" left join skillDescriptions sd on sd.skill_id = s.number" +
+" where sd.lang is null or sd.lang = 'es'" +
+" order by sc.[order]";
 
 
 // {
@@ -36,6 +42,7 @@ function groupByCategory (accum, r) {
     accum[r.categoryId] = {
       category: r.category,
       color: r.color,
+      order: r.order,
       skills: {}
     };
   }
@@ -47,8 +54,10 @@ function groupByCategory (accum, r) {
     category.skills[r.number] = {
       number: r.number,
       image: r.image,
+      name: r.name,
       countries: [],
-      photos: []
+      photos: [],
+      descriptions: {}
     };
   }
   var skill = category.skills[r.number];
@@ -61,30 +70,47 @@ function groupByCategory (accum, r) {
     skill.photos.push(r.photos);
   }
 
+  // descriptions
+  skill.descriptions[r.descriptionType] = r.description;
+
   return accum;
 }
 
-function flattenObject (obj) {
-  var result = []
-  for (var category in obj) {
-    if (obj.hasOwnProperty(category)) {
-      result.push(obj[category]);
+function objToArr (obj, transformFn) {
+  var arr = [];
+  for (var prop in obj) {
+    if (obj.hasOwnProperty(prop)) {
+      if (transformFn) {
+        obj[prop] = transformFn(obj[prop]);
+      }
+      arr.push(obj[prop]);
     }
   }
 
-  return result;
+  return arr;
+}
+
+function cleanupSkill (skill) {
+  skill.countries = _.uniq(skill.countries);
+  skill.photos = _.uniq(skill.photos);
+  return skill;
 }
 
 db.sequelize.query(sql).success(function (rows) {
   var group = rows.reduce(groupByCategory, {});
   for (var cat in group) {
     if (group.hasOwnProperty(cat)) {
-      group[cat].skills = flattenObject(group[cat].skills);
+      var category = group[cat];
+      category.skills = objToArr(category.skills, cleanupSkill);
     }
   }
 
-  var result = flattenObject(group);
-  console.log(
-    util.inspect(
-      result, {depth:4, colors: true}));
-})
+  var result = objToArr(group);
+  result = _.sortBy(result, function (cat) {
+    return cat.order;
+  });
+  // console.log(
+  //   util.inspect(
+  //     result, {depth:4, colors: true}));
+  console.log(JSON.stringify(result));
+});

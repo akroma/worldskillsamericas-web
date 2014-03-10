@@ -1,0 +1,464 @@
+[
+  {
+    "category": "Transporte y Logística",
+    "color": "c12f23",
+    "order": 1,
+    "skills": [
+      {
+        "number": "33",
+        "image": "33.jpg",
+        "name": "Automobile Technology",
+        "countries": [],
+        "photos": [
+          "33.jpg"
+        ],
+        "descriptions": {
+          "activities": "Desmonta, inspecciona, diagnostica defectos, regula, monta y hace el control dimensional de motores de automóviles. ",
+          "fields_of_work": "Industria automotiva en general, montadoras de automóviles, concesionarios y talleres mecánicos.",
+          "qualities": "Busca constante de especialización técnica. - Iniciativa y creatividad para solucionar desafíos. - Espíritu de trabajo en equipo."
+        }
+      }
+    ]
+  },
+  {
+    "category": "Construcción y Tecnología",
+    "color": "d68e27",
+    "order": 2,
+    "skills": [
+      {
+        "number": "12",
+        "image": "12.jpg",
+        "name": "Wall and Floor Tiling",
+        "countries": [
+          "Bolívia ",
+          "Brasil ",
+          "República Dominicana ",
+          "El Salvador ",
+          "Paraguai ",
+          "Perú"
+        ],
+        "photos": [],
+        "descriptions": {
+          "activities": "Revestimiento de paredes, suelos y escaleras con placas cerámicas, tales como azulejos y plaquitas de cerámica, de acuerdo con normas técnicas, determinaciones y especificaciones de proyectos. ",
+          "fields_of_work": "Construcción civil y servicios generales, empresas industriales, comerciales o de servicios.",
+          "qualities": "Saber comunicarse de forma clara y objetiva con clientes, superiores y compañeros de trabajo. - Creatividad y habilidad para trabajar con diferentes materiales. - Capacidad de organización."
+        }
+      },
+      {
+        "number": "15",
+        "image": "15.jpg",
+        "name": "Plumbing and Heating",
+        "countries": [
+          "El Salvador ",
+          "Paraguai "
+        ],
+        "photos": [
+          "15-1.jpg",
+          "15.jpg"
+        ],
+        "descriptions": {
+          "activities": "Instala y realiza mantenimiento preventivo y correctivo de tuberías y conexiones, accesorios y equipos de sistemas hidráulicos y a gas de predios. ",
+          "fields_of_work": "Empresas de la construcción civil en general.",
+          "qualities": "Habilidad manual y agudeza visual para ejecutar trabajos con precisión. - Capacidad para trabajar en equipo. - Racionalidad en la utilización de materiales y buena capacidad para leer e interpretar proyectos."
+        }
+      },
+      {
+        "number": "18",
+        "image": "18.jpg",
+        "name": "Electrical Installations",
+        "countries": [],
+        "photos": [
+          "18.jpg"
+        ],
+        "descriptions": {
+          "activities": "Instalación y mantenimiento de circuitos y equipos eléctricos en edificaciones, incluyendo automación predial, montajes de redes de baja y alta tensión y subestaciones transformadoras, siempre de acuerdo con proyectos y documentos técnicos específicos. ",
+          "fields_of_work": "Distribuidora de energía eléctrica, empresas de telefonía y prestadoras de servicios de instalación y mantenimiento eléctrico.",
+          "qualities": "Creatividad para crear soluciones para los desafíos enfrentados en el día a día del trabajo. - Seguridad y flexibilidad en la toma de decisiones. - Concentración y organización."
+        }
+      },
+      {
+        "number": "20",
+        "image": "20.jpg",
+        "name": "Bricklaying",
+        "countries": [],
+        "photos": [
+          "20.jpg"
+        ],
+        "descriptions": {
+          "activities": "prepara mortero, construye estructuras de mampostería internos y externos, instala aislamiento en mampostería. ",
+          "fields_of_work": "en proyectos de construcción civil residencial y comercial",
+          "qualities": "concentración y precisión, lectura e interpretación de dibujos técnicos, calidad y seguridad en el trabajo"
+        }
+      },
+      {
+        "number": "24",
+        "image": "24.jpg",
+        "name": "Cabinetmaking",
+        "countries": [],
+        "photos": [
+          "24.JPG"
+        ],
+        "descriptions": {
+          "activities": "A partir de un proyecto previo, el Carpintero planifica y ejecuta la fabricación y reparación de muebles, equipos y piezas en madera y derivados. Aplica revestimientos para restaurar o reparar muebles, equipos y piezas de madera y derivados. ",
+          "fields_of_work": "Empresas de muebles, productos de madera y construcción civil.",
+          "qualities": "Creatividad para presentar innovaciones en los productos fabricados. - Capacidad para negociar con los clientes, desde el proceso de planificación hasta la fabricación y restauración de muebles. - Visión espacial, nociones de geometría y matemáticas."
+        }
+      },
+      {
+        "number": "38",
+        "image": "38.jpg",
+        "name": "Refrigeration and Air Conditioning",
+        "countries": [],
+        "photos": [
+          "38.jpg"
+        ],
+        "descriptions": {
+          "activities": "Interpreta, ejecuta y supervisa proyectos de refrigeración y ventilación, especificando materiales y accesorios, identificando y corrigiendo escapes. ",
+          "fields_of_work": "Establecimientos y talleres de refrigeración y climatización residencial, comercial, industrial y automotiva.",
+          "qualities": "Organización, visando productividad y disminución de riesgos de accidentes de trabajo y perjuicios. - Habilidad y motivación para trabajar en equipo. - Responsabilidad para respetar las normas de control y de calidad."
+        }
+      }
+    ]
+  },
+  {
+    "category": "Tecnologías de Fabricación (y Ingeniería)",
+    "color": "006097",
+    "order": 3,
+    "skills": [
+      {
+        "number": "1",
+        "image": "01.jpg",
+        "name": "Polymechanics/Automation",
+        "countries": [
+          "Argentina ",
+          "El Salvador ",
+          "Guatemala ",
+          "Perú"
+        ],
+        "photos": [
+          "01.jpg"
+        ],
+        "descriptions": {
+          "activities": "Fabrica, instala y ejecuta el mantenimiento de piezas y conjuntos mecánicos. Realiza el montaje de componentes y sistemas automatizados como controladores programables y elementos de control y movimiento neumático, hidráulico y eléctrico. ",
+          "fields_of_work": "Industria de automación.",
+          "qualities": "Espíritu de trabajo en equipo. - Busca constante de actualización tecnológica. - Buena capacidad para leer e interpretar diseños y proyectos. - Conocimientos de de normas y procedimientos industriales."
+        }
+      },
+      {
+        "number": "3",
+        "image": "03.jpg",
+        "name": "Manufacturing Team Challenge",
+        "countries": [],
+        "photos": [
+          "03.jpg"
+        ],
+        "descriptions": {
+          "activities": "Crea, proyecta, construye, prueba y ajusta prototipos, que atiendan a un conjunto de requisitos previamente establecidos, generando los registros necesarios y primando por la utilización racional de los recursos empleados. ",
+          "fields_of_work": "Industrias y empresas relacionadas con la automación industrial.",
+          "qualities": "Buena capacidad de adaptación a nuevas tecnologías. - Conocimientos de normas y procedimientos industriales. - Saber leer bibliografía técnica en lengua extranjera. - Espíritu de trabajo en equipo."
+        }
+      },
+      {
+        "number": "4",
+        "image": "04.jpg",
+        "name": "Mechatronics",
+        "countries": [
+          "El Salvador "
+        ],
+        "photos": [
+          "04.jpg"
+        ],
+        "descriptions": {
+          "activities": "Participa del proceso de desarrollo de sistemas automatizados, como robots, equipos que operan con el auxilio de softwares y líneas de producción. Evalúa y especifica componentes de máquinas y supervisa la construcción de prototipos. ",
+          "fields_of_work": "Industria automovilística, electrónica, mecánica, química, entre otras.",
+          "qualities": "Mantenerse actualizado tecnológicamente. - Capacidad de organización. - Habilidad para trabajar en equipo."
+        }
+      },
+      {
+        "number": "5",
+        "image": "05.jpg",
+        "name": "Mechanical Engineering Design â¬\u001c CAD",
+        "countries": [
+          "Antilhas Holandesas ",
+          "Argentina ",
+          "Bolívia ",
+          "Brasil ",
+          "Chile ",
+          "Colombia ",
+          "República Dominicana ",
+          "El Salvador ",
+          "Guatemala ",
+          "Panamá ",
+          "Paraguai ",
+          "Perú"
+        ],
+        "photos": [
+          "05.jpg"
+        ],
+        "descriptions": {
+          "activities": "Desarrollo de diseños, proyecciones y cortes utilizando medios electrónicos. Prepara hojas de trabajo y diagramas detallados de máquinas, piezas y proyectos mecánicos conteniendo las informaciones necesarias para su producción y documentación. ",
+          "fields_of_work": "Empresas fabricantes de piezas y equipos y montadoras.",
+          "qualities": "Saber leer bibliografía técnica en lengua extranjera. - Conocimiento de normas técnicas y especificaciones industriales. - Mantenerse actualizado tecnológicamente."
+        }
+      },
+      {
+        "number": "6",
+        "image": "06.jpg",
+        "name": "CNC Turning",
+        "countries": [
+          "Bolívia ",
+          "Brasil ",
+          "República Dominicana ",
+          "El Salvador ",
+          "Panamá ",
+          "Paraguai "
+        ],
+        "photos": [
+          "06.jpg"
+        ],
+        "descriptions": {
+          "activities": "Preparación, regulación, operación y control de parámetros para confección de piezas en torno CNC, siguiendo especificaciones de proyecto y normas industriales. ",
+          "fields_of_work": "Mecanizados y fabricación de máquinas y equipos.",
+          "qualities": "Busca constante de actualización tecnológica. - Concentración y precisión. - Saber leer proyectos y diseños técnicos. - Desvelo por el patrimonio de la empresa, evitando el mal uso de equipos y máquinas."
+        }
+      },
+      {
+        "number": "7",
+        "image": "07.jpg",
+        "name": "CNC Milling",
+        "countries": [
+          "Antilhas Holandesas ",
+          "Argentina ",
+          "Bolívia ",
+          "Brasil ",
+          "Chile ",
+          "Colombia ",
+          "República Dominicana ",
+          "El Salvador ",
+          "Guatemala ",
+          "Paraguai ",
+          "Perú"
+        ],
+        "photos": [
+          "07.jpg"
+        ],
+        "descriptions": {
+          "activities": "Actividades que desarrollan Preparación, regulación, operación y control de parámetros de corte de piezas y conjuntos mecánicos. Utiliza máquinas CNC para fresar piezas de materiales metálicos, plásticos y compuestos. ",
+          "fields_of_work": "Industria de fresado y fabricación de máquinas y equipos.",
+          "qualities": "Buena capacidad de adaptación a nuevas tecnologías. - Visión sistémica del proceso productivo. - Saber leer bibliografía técnica en lengua extranjera. - Desvelo por el patrimonio de la empresa, evitando el mal uso de equipos y máquinas."
+        }
+      },
+      {
+        "number": "10",
+        "image": "10.jpg",
+        "name": "Welding",
+        "countries": [
+          "Bolívia ",
+          "Chile "
+        ],
+        "photos": [
+          "10.jpg"
+        ],
+        "descriptions": {
+          "activities": "Suelda y corta metales y compuestos de acuerdo con especificaciones de proyecto. Realiza inspecciones visuales en piezas, identifica posiciones de soldadura, aplica removedores, precalienta con soplete, cepilla y gubia piezas. ",
+          "fields_of_work": "Empresas fabricantes de estructuras y piezas metálicas, industria de la construcción civil, metalurgia, automación, máquinas y equipos.",
+          "qualities": "Agudeza visual para realizar los procesos de soldadura con exactitud e identificar irregularidades en las piezas producidas. - Buena resistencia física, pues podrá estar largos periodos en posiciones incómodas. - Busca constante de nuevas técnicas de soldadura."
+        }
+      },
+      {
+        "number": "16",
+        "image": "16.jpg",
+        "name": "Electronics",
+        "countries": [
+          "Panamá "
+        ],
+        "photos": [
+          "16.jpg"
+        ],
+        "descriptions": {
+          "activities": "Instala, prueba e inspecciona componentes electrónicos, identifica disfunciones, programa equipos y realiza el mantenimiento preventivo y correctivo de aparatos por medio de mediciones, ajuste y pruebas. ",
+          "fields_of_work": "Empresas fabricantes de máquinas y equipos, componentes eléctricos, electrónicos, microcumputadoras y equipos de comunicación.",
+          "qualities": "Constante perfeccionamiento profesional. - Concentración y atención para desarrollar sus actividades, pues muchas veces tendrá que trabajar bajo presión. - Compromiso con los objetivos de la empresa y secreto profesional."
+        }
+      },
+      {
+        "number": "23",
+        "image": "23.jpg",
+        "name": "Mobile Robotics",
+        "countries": [],
+        "photos": [
+          "23.jpg"
+        ],
+        "descriptions": {
+          "activities": "Proyecto, montaje y programación de robots y sistemas de automación capaces de ejecutar las más diversas tareas, como robots cortadores de césped y que hacen la limpieza de una casa. ",
+          "fields_of_work": "Industria de automación y sectores de enseñanza tecnológica.",
+          "qualities": "Buena noción de programación de sistemas de automación. - Tener disposición para una continua actualización tecnológica. - Saber leer bibliografía técnica en lengua extranjera."
+        }
+      },
+      {
+        "number": "47",
+        "image": "47.jpg",
+        "name": "Turning",
+        "countries": [],
+        "photos": [
+          "47-1.jpg",
+          "47-2.jpg",
+          "47-3.jpg",
+          "47-4.jpg",
+          "47-5.jpg",
+          "47.jpg"
+        ],
+        "descriptions": {
+          "activities": " Preparación, regulación de tornos y mecanizado de piezas de repuesto y mantenimiento, conforme diseño especificaciones y estándares de la industria. ",
+          "fields_of_work": "Industria del mecanizado y fabricación de piezas y mantenimiento de maquinaria y equipo.",
+          "qualities": "Concentración y precisión - Interpretar planos y dibujos técnicos - Celo para patrimonio de la empresa, evitando el uso indebido de equipos y maquinarias"
+        }
+      },
+      {
+        "number": "48",
+        "image": "48.jpg",
+        "name": "Milling",
+        "countries": [],
+        "photos": [
+          "48-1.jpg",
+          "48-2.jpg"
+        ],
+        "descriptions": {
+          "activities": " Preparación, ajuste de conjuntos y piezas mecánicas y operación de mecanizado. Maquina por medio de fresado, piezas de materiales metálicos, plásticos y materiales compuestos. ",
+          "fields_of_work": "Industria del mecanizado y fabricación de piezas y mantenimiento de maquinaria y equipo",
+          "qualities": "Concentración y precisión - Interpretar planos y dibujos técnicos - Celo para patrimonio de la empresa, evitando el uso indebido de equipos y maquinarias"
+        }
+      }
+    ]
+  },
+  {
+    "category": "Tecnología de Información y Comunicación",
+    "color": "7e296d",
+    "order": 4,
+    "skills": [
+      {
+        "number": "2",
+        "image": "02.jpg",
+        "name": "Information Network Cabling",
+        "countries": [
+          "Guatemala ",
+          "Panamá "
+        ],
+        "photos": [
+          "02.jpg"
+        ],
+        "descriptions": {
+          "activities": "Identifica e implementa soluciones en Telecomunicación. Instala, conecta, certifica, optimiza y realiza el mantenimiento de sistemas de transmisión de datos, de voz, imagen y redes de computadoras. ",
+          "fields_of_work": "Empresas de telecomunicación en general.",
+          "qualities": "Busca contante de actualización tecnológica. - Saber leer bibliografía técnica en lengua extranjera. - Conocimientos de las diversas interfaces entre sistemas de transmisión de datos."
+        }
+      },
+      {
+        "number": "9",
+        "image": "09.jpg",
+        "name": "IT Software Solutions for Business",
+        "countries": [
+          "Colombia ",
+          "República Dominicana ",
+          "Paraguai ",
+          "Perú"
+        ],
+        "photos": [
+          "09.jpg"
+        ],
+        "descriptions": {
+          "activities": "Formatea y procesa informaciones y documentos empresariales, plantillas electrónicas y banco de datos relacionados con el en ambiente local, de red o Internet, prestando servicios de soporte y seguridad de las informaciones. ",
+          "fields_of_work": "Este profesional puede actuar en prácticamente todas las áreas industriales y empresariales.",
+          "qualities": "Las empresas buscan profesionales de TI que también sean capaces de desarrollar la infraestructura de la tecnología de la información. O sea, suministro de redes, conexión de computadoras y desarrollo de sistemas. - Mantener constante actualización tecnológica."
+        }
+      },
+      {
+        "number": "17",
+        "image": "17.jpg",
+        "name": "Web Design",
+        "countries": [
+          "Antilhas Holandesas ",
+          "Bolívia ",
+          "El Salvador ",
+          "Paraguai "
+        ],
+        "photos": [
+          "17.jpg"
+        ],
+        "descriptions": {
+          "activities": "Creación, ejecución, mantenimiento y habilitación de web sites para ser aplicados en ambientes multimedia utilizando arquitectura Web, tales como Intranet e Internet, de acuerdo con patrones especificados y necesidades diagnosticadas en el negocio del cliente. ",
+          "fields_of_work": "Empresas de multimedia y desarrollo de productos de Intranet e Internet, pudiendo también trabajar como profesional autónomo.",
+          "qualities": "Creatividad y sensibilidad gráfica para desarrollar web sites. - Busca constante de actualización tecnológica. - Capacidad de organización para cumplir plazos y solicitudes de clientes."
+        }
+      },
+      {
+        "number": "39",
+        "image": "39.jpg",
+        "name": "IT Network Systems Administration",
+        "countries": [],
+        "photos": [
+          "39.jpg"
+        ],
+        "descriptions": {
+          "activities": "Planifica, desarrolla y suministra asistencia técnica a proyectos de instalaciones de redes de comunicación entre computadoras, investigando los recursos necesarios y evaluando el desarrollo del sistema. ",
+          "fields_of_work": "Empresas industriales, comerciales y de servicios que utilizan equipos de informática, Intranet e Internet.",
+          "qualities": "Saber utilizar recursos de informática y leer bibliografía técnica en lengua extranjera. - Racionalidad en la utilización de materiales. - Capacidad de organización. - Creatividad para realizar un trabajo de calidad y atender a las necesidades del cliente."
+        }
+      },
+      {
+        "number": "40",
+        "image": "40.jpg",
+        "name": "Graphic Design Technology",
+        "countries": [],
+        "photos": [
+          "40.jpg"
+        ],
+        "descriptions": {
+          "activities": "Desarrolla programaciones visuales gráficas, impresión offset y pre-impresión, como carteles, invitaciones, periódicos, revistas, folletos y catálogos. Opera equipos de pre-impresión de productos gráficos, además de planificar y controlar procesos de producción. ",
+          "fields_of_work": "Empresas gráficas y editoras.",
+          "qualities": "Saber utilizar recursos de informática y leer bibliografía técnica en lengua extranjera. - Creatividad para realizar un trabajo de calidad y atender satisfactoriamente a las necesidades del cliente. - Capacidad de organización y nociones básicas de mantenimiento. - Saber interpretar normas técnicas."
+        }
+      }
+    ]
+  },
+  {
+    "category": "Artes Creativas y de la moda",
+    "color": "388730",
+    "order": 5,
+    "skills": [
+      {
+        "number": "27",
+        "image": "27.jpg",
+        "name": "Jewellery",
+        "countries": [],
+        "photos": [
+          "27.jpg"
+        ],
+        "descriptions": {
+          "activities": "Moldea metales como oro, plata, cobre y estaño para fabricar joyas, bisuterías, utensilios y otros objetos artesanales, utilizando equipos de fundición y recocimiento. ",
+          "fields_of_work": "Empresas de lapidación de piedras preciosas, semipreciosas, artefactos de orfebrería y joyería y de reparación de objetos personales y domésticos.",
+          "qualities": "Creatividad y sensibilidad artística. - Habilidad manual y agudeza visual. - Concentración, atención y precisión."
+        }
+      }
+    ]
+  },
+  {
+    "category": "Servicios Personales y Sociales",
+    "color": "b86516",
+    "order": 6,
+    "skills": [
+      {
+        "number": "32",
+        "image": "32.jpg",
+        "name": "Confectioner/Pastry Cook",
+        "countries": [],
+        "photos": [],
+        "descriptions": {
+          "activities": "Actividades que desarrolla: prepara y crea una variedad de elaborados y deliciosos productos empleando talento artístico así como toque culinario ",
+          "fields_of_work": "Dónde actúa: panaderías, confiterías y en áreas de servicios personales",
+          "qualities": "creatividad, concentración, ergonomía y conocimiento de las normas de seguridad y salud."
+        }
+      }
+    ]
+  }
+]
