@@ -1,26 +1,37 @@
-﻿Id;Number;name_br;name_en;name_es;picture;skill_group_id
-1;1;Polimecânica;Polymechanics/Automation;Polimecánica / Automatización;01.jpg;4
-2;2;Cabeamento de Redes de Informação;Information Network Cabling;Cableado de Redes de Información;02.jpg;3
-3;3;Manufatura Integrada;Manufacturing Team Challenge;Reto Fabricación por Equipos;03.jpg;4
-4;4;Mecatrônica;Mechatronics;Mecatrónica;04.jpg;4
-5;5;Desenho Mecânico Assistido por Computador - CAD;Mechanical Engineering Design – CAD;Diseño de Ingeniería Mecánica – CAD;05.jpg;4
-6;6;Tornearia a CNC;CNC Turning;Torno CNC;06.jpg;4
-7;7;Fresagem a CNC;CNC Milling;Fresa CNC;07.jpg;4
-8;9;TI Soluções de Software para Empresas;IT Software Solutions for Business;TI Soluciones de Software para Negocios;09.jpg;3
-9;10;Soldagem;Welding;Soldadura;10.jpg;4
-10;12;Aplicação de Revestimentos Cerâmicos;Wall and Floor Tiling;Pared y Piso de Baldosa;12.jpg;1
-11;15;Instalações Hidráulicas e a Gás;Plumbing and Heating;Fontanería y Calefacción;15.jpg;1
-12;16;Eletrônica;Electronics;Electrónica;16.jpg;4
-13;17;Web Design;Web Design;Diseño Web;17.jpg;3
-14;18;Instalações Elétricas;Electrical Installations;Instalaciones Eléctricas;18.jpg;1
-15;20;Construção em Alvenaria;Bricklaying;Albañileria / Mampostería;20.jpg;1
-16;23;Robótica Móvel;Mobile Robotics;Robótica Móvil;23.jpg;4
-17;24;Movelaria;Cabinetmaking;Ebanistería;24.jpg;1
-18;27;Joalheria;Jewellery;Joyería;27.jpg;2
-19;32;Confeitaria;Confectioner/Pastry Cook;Confitería / Pastelería;32.jpg;5
-20;33;Tecnologia Automotiva;Automobile Technology;Tecnología Automótriz;33.jpg;6
-21;38;Refrigeração e Ar Condicionado;Refrigeration and Air Conditioning;Refrigeración y Aire Acondicionado;38.jpg;1
-22;39;TI Administração de Sistemas de Redes;IT Network Systems Administration;TI Administración de Sistemas de Redes;39.jpg;3
-23;40;Design Gráfico;Graphic Design Technology;Tecnología de Diseño Gráfico;40.jpg;3
-24;47;Tornearia;Turning;Torno Convencional;47.jpg;4
-25;48;Fresagem;Milling;Fresado Convencional;48.jpg;4
+﻿Id;Number;name_en;name_es;name_pt;image;skill_category_id
+1;1;Polymechanics/Automation;Polimecánica;Polimecânica;01.jpg;4
+2;2;Information Network Cabling;Cableado de Redes de Información ;Cabeamento de Redes de Informação;02.jpg;3
+3;3;Manufacturing Team Challenge;Desafío de Equipos de Manufactura;Manufatura Integrada;03.jpg;4
+4;4;Mechatronics;Mecatrónica;Mecatrônica;04.jpg;4
+5;5;Mechanical Engineering Design – CAD;CAD (Ingeniería de Diseño Mecánico);Desenho Mecânico Assistido por Computador - CAD;05.jpg;4
+6;6;CNC Turning;Torno CNC;Tornearia a CNC;06.jpg;4
+7;7;CNC Milling;Fresado CNC ;Fresagem a CNC;07.jpg;4
+8;9;IT Software Solutions for Business;IT / Soluciones de software para Negocios;TI Soluções de Software para Empresas;09.jpg;3
+9;10;Welding;Soldadura;Soldagem;10.jpg;4
+10;12;Wall and Floor Tiling;Enchape de Pisos y Paredes ;Aplicação de Revestimentos Cerâmicos;12.jpg;1
+11;15;Plumbing and Heating;Fontanería y Calefacción;Instalações Hidráulicas e a Gás;15.jpg;1
+12;16;Electronics;Electrónica ;Eletrônica;16.jpg;4
+13;17;Web Design;Diseño Web;Web Design;17.jpg;3
+14;18;Electrical Installations;Instalaciones Eléctricas;Instalações Elétricas;18.jpg;1
+15;20;Bricklaying;Mampostería;Construção em Alvenaria;20.jpg;1
+16;23;Mobile Robotics;Robótica Móvil;Robótica Móvel;23.jpg;4
+17;24;Cabinetmaking;Carpintería de Muebles;Movelaria;24.jpg;1
+18;27;Jewellery;Joyería;Joalheria;27.jpg;2
+19;32;Confectioner/Pastry Cook;Pastelería;Confeitaria;32.jpg;5
+20;33;Automobile Technology;Tecnología Automotriz;Tecnologia Automotiva;33.jpg;6
+21;38;Refrigeration and Air Conditioning;Refrigeración y Aire Acondicionado ;Refrigeração e Ar Condicionado;38.jpg;1
+22;39;IT Network Systems Administration;IT / Administración de Sistemas de Redes ;TI Administração de Sistemas de Redes;39.jpg;3
+23;40;Graphic Design Technology;Diseño Gráfico;Design Gráfico;40.jpg;2
+24;47;Turning;Torno Convencional;Tornearia;47.jpg;4
+25;48;Milling;Fresado Convencional;Fresagem;48.jpg;4
+26;11;Print Media Technology;Tecnología de Impresión de Medios ;Tecnologia da Mídia Impressa;11.jpg;3
+27;19;Industrial Control;Control Industrial;Eletricidade Industrial;19.jpg;4
+28;21;Plastering and Drywall Systems;Sistemas de Drywall y Yesos ;Sistemas de Gesso e Drywall;21.jpg;1
+29;29;Ladies/Mens Hairdressing;Peluquería;Cabeleireiro;29.jpg;5
+30;31;Fashion Technology;Tecnología de la Moda ;Tecnologia da Moda;31.jpg;2
+31;34;Cooking;Cocina;Cozinha;34.jpg;5
+32;35;Restaurant Service;Servicio de Restaurante;Serviço de Restaurante;35.jpg;5
+33;41;Health and Social Care;Salud y Cuidados Sociales ;Cuidador de Pessoas;41.jpg;5
+34;46;Clothes Sewing;Confección de Ropa;Confecção de Roupas;46.jpg;2
+35;C01;Bartending;Barismo;Barismo;C01.jpg;5
+36;D01;Mobile Apps Challenge;Desarrollo de Aplicaciones Móviles;Desenvolvimento de Aplicativos Móveis;D01.jpg;3

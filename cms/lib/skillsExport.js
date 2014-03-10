@@ -3,14 +3,17 @@ var db = require('../models');
 var util = require('util');
 var _ = require('lodash');
 
-var sql = "SELECT s.number as number" +
-"   , sc.name_es as category" +
+var lang = 'es';
+
+function getSQL (lang) {
+  return "SELECT s.number as number" +
+"   , sc.name_" + lang + " as category" +
 "   , sc.id as categoryId" +
 "   , sc.color as color" +
 "   , p.path as photos" +
-"   , c.name_es as countries" +
+"   , c.name_" + lang + " as countries" +
 "   , s.image as image" +
-"   , s.name_es as name" +
+"   , s.name_" + lang + " as name" +
 "   , sd.type as descriptionType" +
 "   , sd.text as description" +
 "   , sc.[order] as [order]" +
@@ -20,8 +23,9 @@ var sql = "SELECT s.number as number" +
 " left join skillcategories sc on s.skill_category_id = sc.id" +
 " left join pictures p on p.skill_id = s.number" +
 " left join skillDescriptions sd on sd.skill_id = s.number" +
-" where sd.lang is null or sd.lang = 'es'" +
+" where sd.lang is null or sd.lang = '" + lang + "'" +
 " order by sc.[order]";
+}
 
 
 // {
@@ -96,7 +100,7 @@ function cleanupSkill (skill) {
   return skill;
 }
 
-db.sequelize.query(sql).success(function (rows) {
+db.sequelize.query(getSQL(lang)).success(function (rows) {
   var group = rows.reduce(groupByCategory, {});
   for (var cat in group) {
     if (group.hasOwnProperty(cat)) {

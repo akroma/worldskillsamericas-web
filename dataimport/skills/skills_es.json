@@ -1,14 +1,24 @@
 [
   {
-    "category": "Transporte y Logística",
+    "category": "Transportes e Logística",
     "color": "c12f23",
     "order": 1,
     "skills": [
       {
         "number": "33",
         "image": "33.jpg",
-        "name": "Automobile Technology",
-        "countries": [],
+        "name": "Tecnología Automotriz",
+        "countries": [
+          "Brasil ",
+          "Chile ",
+          "Colombia ",
+          "Costa Rica ",
+          "República Dominicana ",
+          "Estados Unidos",
+          "Guatemala ",
+          "México ",
+          "Perú"
+        ],
         "photos": [
           "33.jpg"
         ],
@@ -21,21 +31,19 @@
     ]
   },
   {
-    "category": "Construcción y Tecnología",
+    "category": "Construção e Edificações",
     "color": "d68e27",
     "order": 2,
     "skills": [
       {
         "number": "12",
         "image": "12.jpg",
-        "name": "Wall and Floor Tiling",
+        "name": "Enchape de Pisos y Paredes ",
         "countries": [
-          "Bolívia ",
+          "Antilhas Holandesas ",
+          "Argentina ",
           "Brasil ",
-          "República Dominicana ",
-          "El Salvador ",
-          "Paraguai ",
-          "Perú"
+          "Colombia "
         ],
         "photos": [],
         "descriptions": {
@@ -47,9 +55,11 @@
       {
         "number": "15",
         "image": "15.jpg",
-        "name": "Plumbing and Heating",
+        "name": "Fontanería y Calefacción",
         "countries": [
-          "El Salvador ",
+          "Argentina ",
+          "Brasil ",
+          "Chile ",
           "Paraguai "
         ],
         "photos": [
@@ -65,8 +75,20 @@
       {
         "number": "18",
         "image": "18.jpg",
-        "name": "Electrical Installations",
-        "countries": [],
+        "name": "Instalaciones Eléctricas",
+        "countries": [
+          "Argentina ",
+          "Bolívia ",
+          "Brasil ",
+          "Chile ",
+          "Colombia ",
+          "Costa Rica ",
+          "Guatemala ",
+          "Honduras ",
+          "México ",
+          "Panamá ",
+          "Paraguai "
+        ],
         "photos": [
           "18.jpg"
         ],
@@ -79,8 +101,13 @@
       {
         "number": "20",
         "image": "20.jpg",
-        "name": "Bricklaying",
-        "countries": [],
+        "name": "Mampostería",
+        "countries": [
+          "Argentina ",
+          "Bolívia ",
+          "Brasil ",
+          "Colombia "
+        ],
         "photos": [
           "20.jpg"
         ],
@@ -91,10 +118,31 @@
         }
       },
       {
+        "number": "21",
+        "image": "21.jpg",
+        "name": "Sistemas de Drywall y Yesos ",
+        "countries": [
+          "Antilhas Holandesas ",
+          "Argentina ",
+          "Brasil ",
+          "Colombia "
+        ],
+        "photos": [
+          "21.jpg"
+        ],
+        "descriptions": {
+          "what_they_do": "Incorpora el levantamiento de estructuras livianas con láminas de yeso o fibrocemento, incluyendo estructuras flotantes de edificaciones, entrepisos, fachadas, cielos rasos, cubiertas, paredes curvas, acabados Industriales, arte y decoración, molduras en yeso, estructuras en madera y manejo de sistemas acústicos y térmicos."
+        }
+      },
+      {
         "number": "24",
         "image": "24.jpg",
-        "name": "Cabinetmaking",
-        "countries": [],
+        "name": "Carpintería de Muebles",
+        "countries": [
+          "Brasil ",
+          "Costa Rica ",
+          "Estados Unidos"
+        ],
         "photos": [
           "24.JPG"
         ],
@@ -107,8 +155,14 @@
       {
         "number": "38",
         "image": "38.jpg",
-        "name": "Refrigeration and Air Conditioning",
-        "countries": [],
+        "name": "Refrigeración y Aire Acondicionado ",
+        "countries": [
+          "Brasil ",
+          "Colombia ",
+          "Guatemala ",
+          "Panamá ",
+          "Paraguai "
+        ],
         "photos": [
           "38.jpg"
         ],
@@ -121,18 +175,18 @@
     ]
   },
   {
-    "category": "Tecnologías de Fabricación (y Ingeniería)",
+    "category": "Tecnologias de Manufatura e Engenharias",
     "color": "006097",
     "order": 3,
     "skills": [
       {
         "number": "1",
         "image": "01.jpg",
-        "name": "Polymechanics/Automation",
+        "name": "Polimecánica",
         "countries": [
-          "Argentina ",
-          "El Salvador ",
-          "Guatemala ",
+          "Brasil ",
+          "Colombia ",
+          "México ",
           "Perú"
         ],
         "photos": [
@@ -147,7 +201,7 @@
       {
         "number": "3",
         "image": "03.jpg",
-        "name": "Manufacturing Team Challenge",
+        "name": "Desafío de Equipos de Manufactura",
         "countries": [],
         "photos": [
           "03.jpg"
@@ -161,9 +215,15 @@
       {
         "number": "4",
         "image": "04.jpg",
-        "name": "Mechatronics",
+        "name": "Mecatrónica",
         "countries": [
-          "El Salvador "
+          "Brasil ",
+          "Chile ",
+          "Colombia ",
+          "El Salvador ",
+          "Guatemala ",
+          "México ",
+          "Perú"
         ],
         "photos": [
           "04.jpg"
@@ -177,20 +237,12 @@
       {
         "number": "5",
         "image": "05.jpg",
-        "name": "Mechanical Engineering Design â¬\u001c CAD",
+        "name": "CAD (Ingeniería de Diseño Mecánico)",
         "countries": [
-          "Antilhas Holandesas ",
-          "Argentina ",
-          "Bolívia ",
           "Brasil ",
           "Chile ",
           "Colombia ",
-          "República Dominicana ",
-          "El Salvador ",
-          "Guatemala ",
-          "Panamá ",
-          "Paraguai ",
-          "Perú"
+          "Guatemala "
         ],
         "photos": [
           "05.jpg"
@@ -204,14 +256,13 @@
       {
         "number": "6",
         "image": "06.jpg",
-        "name": "CNC Turning",
+        "name": "Torno CNC",
         "countries": [
-          "Bolívia ",
           "Brasil ",
-          "República Dominicana ",
+          "Colombia ",
+          "Costa Rica ",
           "El Salvador ",
-          "Panamá ",
-          "Paraguai "
+          "México "
         ],
         "photos": [
           "06.jpg"
@@ -225,19 +276,13 @@
       {
         "number": "7",
         "image": "07.jpg",
-        "name": "CNC Milling",
+        "name": "Fresado CNC ",
         "countries": [
-          "Antilhas Holandesas ",
-          "Argentina ",
-          "Bolívia ",
           "Brasil ",
-          "Chile ",
           "Colombia ",
+          "Costa Rica ",
           "República Dominicana ",
-          "El Salvador ",
-          "Guatemala ",
-          "Paraguai ",
-          "Perú"
+          "México "
         ],
         "photos": [
           "07.jpg"
@@ -251,10 +296,19 @@
       {
         "number": "10",
         "image": "10.jpg",
-        "name": "Welding",
+        "name": "Soldadura",
         "countries": [
+          "Antilhas Holandesas ",
           "Bolívia ",
-          "Chile "
+          "Brasil ",
+          "Chile ",
+          "Colombia ",
+          "Costa Rica ",
+          "Guatemala ",
+          "Honduras ",
+          "México ",
+          "Panamá ",
+          "Perú"
         ],
         "photos": [
           "10.jpg"
@@ -268,9 +322,17 @@
       {
         "number": "16",
         "image": "16.jpg",
-        "name": "Electronics",
+        "name": "Electrónica ",
         "countries": [
-          "Panamá "
+          "Brasil ",
+          "Chile ",
+          "Colombia ",
+          "República Dominicana ",
+          "Guatemala ",
+          "Honduras ",
+          "México ",
+          "Panamá ",
+          "Perú"
         ],
         "photos": [
           "16.jpg"
@@ -282,10 +344,33 @@
         }
       },
       {
+        "number": "19",
+        "image": "19.jpg",
+        "name": "Control Industrial",
+        "countries": [
+          "Brasil ",
+          "Chile ",
+          "Colombia ",
+          "El Salvador ",
+          "Guatemala ",
+          "México ",
+          "Perú"
+        ],
+        "photos": [],
+        "descriptions": {
+          "what_they_do": "Esta habilidad usa aplicaciones básicas de electricidad y automatización industrial, instalación de conductos, cajas de control, cables y dispositivos automáticos, aplicando circuitos de control, de fuerza, y automatización industrial, Interfaces Maquina Humano (HMI), lógica programable y comunicaciones industriales."
+        }
+      },
+      {
         "number": "23",
         "image": "23.jpg",
-        "name": "Mobile Robotics",
-        "countries": [],
+        "name": "Robótica Móvil",
+        "countries": [
+          "Brasil ",
+          "Chile ",
+          "Colombia ",
+          "México "
+        ],
         "photos": [
           "23.jpg"
         ],
@@ -298,8 +383,16 @@
       {
         "number": "47",
         "image": "47.jpg",
-        "name": "Turning",
-        "countries": [],
+        "name": "Torno Convencional",
+        "countries": [
+          "Bolívia ",
+          "Brasil ",
+          "Chile ",
+          "Costa Rica ",
+          "Guatemala ",
+          "Honduras ",
+          "México "
+        ],
         "photos": [
           "47-1.jpg",
           "47-2.jpg",
@@ -317,8 +410,14 @@
       {
         "number": "48",
         "image": "48.jpg",
-        "name": "Milling",
-        "countries": [],
+        "name": "Fresado Convencional",
+        "countries": [
+          "Brasil ",
+          "Chile ",
+          "Costa Rica ",
+          "Guatemala ",
+          "Honduras "
+        ],
         "photos": [
           "48-1.jpg",
           "48-2.jpg"
@@ -332,17 +431,19 @@
     ]
   },
   {
-    "category": "Tecnología de Información y Comunicación",
+    "category": "Tecnologias da Informação e Comunicação",
     "color": "7e296d",
     "order": 4,
     "skills": [
       {
         "number": "2",
         "image": "02.jpg",
-        "name": "Information Network Cabling",
+        "name": "Cableado de Redes de Información ",
         "countries": [
-          "Guatemala ",
-          "Panamá "
+          "Antilhas Holandesas ",
+          "Brasil ",
+          "Colombia ",
+          "México "
         ],
         "photos": [
           "02.jpg"
@@ -356,12 +457,14 @@
       {
         "number": "9",
         "image": "09.jpg",
-        "name": "IT Software Solutions for Business",
+        "name": "IT / Soluciones de software para Negocios",
         "countries": [
+          "Brasil ",
+          "Chile ",
           "Colombia ",
           "República Dominicana ",
-          "Paraguai ",
-          "Perú"
+          "Guatemala ",
+          "México "
         ],
         "photos": [
           "09.jpg"
@@ -373,14 +476,26 @@
         }
       },
       {
+        "number": "11",
+        "image": "11.jpg",
+        "name": "Tecnología de Impresión de Medios ",
+        "countries": [],
+        "photos": [],
+        "descriptions": {
+          "what_they_do": "Implicala producción de material impreso usando una máquina de impresión offset a hojas, además de una máquina de impresión digital y otros equipos para el finalizado de los productos impresos, la impresión es la responsable de imprimir y producir todo el material en el negocio de la impresión."
+        }
+      },
+      {
         "number": "17",
         "image": "17.jpg",
-        "name": "Web Design",
+        "name": "Diseño Web",
         "countries": [
           "Antilhas Holandesas ",
-          "Bolívia ",
-          "El Salvador ",
-          "Paraguai "
+          "Brasil ",
+          "Colombia ",
+          "República Dominicana ",
+          "Guatemala ",
+          "México "
         ],
         "photos": [
           "17.jpg"
@@ -394,8 +509,15 @@
       {
         "number": "39",
         "image": "39.jpg",
-        "name": "IT Network Systems Administration",
-        "countries": [],
+        "name": "IT / Administración de Sistemas de Redes ",
+        "countries": [
+          "Brasil ",
+          "Chile ",
+          "Colombia ",
+          "Guatemala ",
+          "México ",
+          "Paraguai "
+        ],
         "photos": [
           "39.jpg"
         ],
@@ -406,30 +528,32 @@
         }
       },
       {
-        "number": "40",
-        "image": "40.jpg",
-        "name": "Graphic Design Technology",
+        "number": "D01",
+        "image": "D01.jpg",
+        "name": "Desarrollo de Aplicaciones Móviles",
         "countries": [],
         "photos": [
-          "40.jpg"
+          "D01-1.jpg",
+          "D01-2.jpg",
+          "D01-3.jpg",
+          "D01-4.jpg",
+          "D01.jpg"
         ],
         "descriptions": {
-          "activities": "Desarrolla programaciones visuales gráficas, impresión offset y pre-impresión, como carteles, invitaciones, periódicos, revistas, folletos y catálogos. Opera equipos de pre-impresión de productos gráficos, además de planificar y controlar procesos de producción. ",
-          "fields_of_work": "Empresas gráficas y editoras.",
-          "qualities": "Saber utilizar recursos de informática y leer bibliografía técnica en lengua extranjera. - Creatividad para realizar un trabajo de calidad y atender satisfactoriamente a las necesidades del cliente. - Capacidad de organización y nociones básicas de mantenimiento. - Saber interpretar normas técnicas."
+          "what_they_do": "Desarrollo de aplicaciones móviles abarca el diseño y desarrollo de soluciones de software para dispositivos móviles, como teléfonos inteligentes y tabletas con originalidad, innovación y creatividad."
         }
       }
     ]
   },
   {
-    "category": "Artes Creativas y de la moda",
+    "category": "Moda e Criatividade",
     "color": "388730",
     "order": 5,
     "skills": [
       {
         "number": "27",
         "image": "27.jpg",
-        "name": "Jewellery",
+        "name": "Joyería",
         "countries": [],
         "photos": [
           "27.jpg"
@@ -439,24 +563,178 @@
           "fields_of_work": "Empresas de lapidación de piedras preciosas, semipreciosas, artefactos de orfebrería y joyería y de reparación de objetos personales y domésticos.",
           "qualities": "Creatividad y sensibilidad artística. - Habilidad manual y agudeza visual. - Concentración, atención y precisión."
         }
+      },
+      {
+        "number": "31",
+        "image": "31.jpg",
+        "name": "Tecnología de la Moda ",
+        "countries": [
+          "Brasil ",
+          "Colombia ",
+          "Costa Rica "
+        ],
+        "photos": [],
+        "descriptions": {
+          "what_they_do": "En esta habilidad se desarrollan procesos de creación de prendas de vestir, utilizando diferentes materiales y accesorios, además de máquinas industriales de coser y técnicas de trabajo de mano, para generar un producto acorde con los parámetros y requisitos definidos."
+        }
+      },
+      {
+        "number": "40",
+        "image": "40.jpg",
+        "name": "Diseño Gráfico",
+        "countries": [
+          "Brasil ",
+          "Chile ",
+          "Colombia ",
+          "Costa Rica ",
+          "Guatemala ",
+          "México "
+        ],
+        "photos": [
+          "40.jpg"
+        ],
+        "descriptions": {
+          "activities": "Desarrolla programaciones visuales gráficas, impresión offset y pre-impresión, como carteles, invitaciones, periódicos, revistas, folletos y catálogos. Opera equipos de pre-impresión de productos gráficos, además de planificar y controlar procesos de producción. ",
+          "fields_of_work": "Empresas gráficas y editoras.",
+          "qualities": "Saber utilizar recursos de informática y leer bibliografía técnica en lengua extranjera. - Creatividad para realizar un trabajo de calidad y atender satisfactoriamente a las necesidades del cliente. - Capacidad de organización y nociones básicas de mantenimiento. - Saber interpretar normas técnicas."
+        }
+      },
+      {
+        "number": "46",
+        "image": "46.jpg",
+        "name": "Confección de Ropa",
+        "countries": [
+          "Bolívia ",
+          "Brasil ",
+          "Guatemala ",
+          "Perú"
+        ],
+        "photos": [
+          "46-1.jpg",
+          "46-2.jpg",
+          "46-3.jpg",
+          "46-4.jpg",
+          "46.jpg"
+        ],
+        "descriptions": {
+          "what_they_do": "Consiste en desarrollar, modelar y fabricar productos nuevos en 2D y 3D. Cuando se desarrolla un nuevo producto industrial, este se ha diseñado con base en un concepto o prototipo. La forma final del nuevo producto se determina después de exhaustivas pruebas y modificaciones."
+        }
       }
     ]
   },
   {
-    "category": "Servicios Personales y Sociales",
+    "category": "Serviços Pessoais",
     "color": "b86516",
     "order": 6,
     "skills": [
       {
+        "number": "29",
+        "image": "29.jpg",
+        "name": "Peluquería",
+        "countries": [
+          "Barbados ",
+          "Brasil ",
+          "Costa Rica ",
+          "Guatemala "
+        ],
+        "photos": [],
+        "descriptions": {
+          "what_they_do": "Consiste en cortar, dar color, forma, estilo, al pelo de las personas. Mediante el asesoramiento y el tratamiento profesional de la peluquería se esfuerza por acentuar la apariencia y la personalidad general del cliente."
+        }
+      },
+      {
         "number": "32",
         "image": "32.jpg",
-        "name": "Confectioner/Pastry Cook",
-        "countries": [],
+        "name": "Pastelería",
+        "countries": [
+          "Brasil ",
+          "Costa Rica ",
+          "El Salvador ",
+          "Guatemala ",
+          "México "
+        ],
         "photos": [],
         "descriptions": {
           "activities": "Actividades que desarrolla: prepara y crea una variedad de elaborados y deliciosos productos empleando talento artístico así como toque culinario ",
           "fields_of_work": "Dónde actúa: panaderías, confiterías y en áreas de servicios personales",
           "qualities": "creatividad, concentración, ergonomía y conocimiento de las normas de seguridad y salud."
+        }
+      },
+      {
+        "number": "34",
+        "image": "34.jpg",
+        "name": "Cocina",
+        "countries": [
+          "Antilhas Holandesas ",
+          "Bolívia ",
+          "Brasil ",
+          "Chile ",
+          "Colombia ",
+          "Costa Rica ",
+          "El Salvador ",
+          "Guatemala ",
+          "México ",
+          "Panamá "
+        ],
+        "photos": [
+          "34.jpg"
+        ],
+        "descriptions": {
+          "what_they_do": "Esta habilidad incorpora componentes de planificación de menús, además del proceso de preparación de una variedad de alimentos según las reglas de salud y seguridad y conocimientos relacionados con la administración de una cocina comercial."
+        }
+      },
+      {
+        "number": "35",
+        "image": "35.jpg",
+        "name": "Servicio de Restaurante",
+        "countries": [
+          "Antilhas Holandesas ",
+          "Brasil ",
+          "Colombia ",
+          "Costa Rica ",
+          "México ",
+          "Panamá "
+        ],
+        "photos": [],
+        "descriptions": {
+          "what_they_do": "Implica el servicio de alimentos y bebidas en los restaurantes de alta cocina, bar, cafeterías, hoteles y otros. Deben preparar mesas para el servicio, tomar pedidos, limpiar mezclar y servir bebidas, abrir y servir vinos, calcular las facturas y recibir pagos. Los camareros están obligados a proporcionar un alto nivel para igualar la calidad de la comida que sirven."
+        }
+      },
+      {
+        "number": "41",
+        "image": "41.jpg",
+        "name": "Salud y Cuidados Sociales ",
+        "countries": [
+          "Argentina ",
+          "Brasil ",
+          "Chile ",
+          "Colombia ",
+          "México "
+        ],
+        "photos": [
+          "41-1.jpg",
+          "41-2.jpg",
+          "41-3.jpg",
+          "41-4.jpg",
+          "41.jpg"
+        ],
+        "descriptions": {
+          "what_they_do": "Comprende una amplia gama de actividades en las que se demuestran habilidades y destrezas, relacionadas con el apoyo al crecimiento y desarrollo, salud física y psicosocial, cuidado durante la enfermedad, recuperación y rehabilitación en los diferentes grupos etáreos."
+        }
+      },
+      {
+        "number": "C01",
+        "image": "C01.jpg",
+        "name": "Barismo",
+        "countries": [],
+        "photos": [
+          "C01-2.jpg",
+          "C01-3.jpg",
+          "C01-4.jpg",
+          "C01.jpg"
+        ],
+        "descriptions": {
+          "what_they_do": "Implica el servicio de alimentos y bebidas en los restaurantes de alta cocina, bar, cafeterías, hoteles y otros. Deben preparar mesas para el servicio, tomar pedidos, limpiar mezclar y servir bebidas, abrir y servir vinos, calcular las facturas y recibir pagos. Los camareros están obligados a proporcionar un alto nivel para igualar la calidad de la comida que sirven."
         }
       }
     ]

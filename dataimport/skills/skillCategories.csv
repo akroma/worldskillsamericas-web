@@ -1,7 +1,7 @@
-id;name_en;name_pt;name_es;color
-1;Construction and Building Technology;Construção e Edificações;Construcción y Tecnología;d68e27
-2;Creative Arts and Fashion;Moda e Criatividade;Artes Creativas y de la moda;388730
-3;Information and Communication Technology;Tecnologias da Informação e Comunicação;Tecnología de Información y Comunicación;7e296d
-4;Manufacturing and Engineering Technology;Tecnologias de Manufatura e Engenharias;Tecnologías de Fabricación (y Ingeniería);006097
-5;Social and Personal Services;Serviços Pessoais;Servicios Personales y Sociales;b86516
-6;Transportation and Logistics;Transportes e Logística;Transporte y Logística;c12f23
+ï»¿id;name_es;name_en;name_pt;color;order
+1;TecnologÃ­as dela ConstrucciÃ³n;Construction and Building Technology;ConstruÃ§Ã£o e EdificaÃ§Ãµes;d68e27;2
+2;Artes Creativas y Moda;Creative Arts and Fashion;Moda e Criatividade;388730;5
+3;TecnologÃ­as de la InformaciÃ³n y las Comunicaciones;Information and Communication Technology;Tecnologias da InformaÃ§Ã£o e ComunicaÃ§Ã£o;7e296d;4
+4;TecnologÃ­as de la IngenierÃ­a y la Manufactura;Manufacturing and Engineering Technology;Tecnologias de Manufatura e Engenharias;006097;3
+5;Servicios Sociales y Personales;Social and Personal Services;ServiÃ§os Pessoais;b86516;6
+6;Transporte y LogÃ­stica;Transportation and Logistics;Transportes e LogÃ­stica;c12f23;1
