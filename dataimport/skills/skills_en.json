@@ -1,0 +1,742 @@
+[
+  {
+    "category": "Transportation and Logistics",
+    "color": "c12f23",
+    "order": 1,
+    "skills": [
+      {
+        "number": "33",
+        "image": "33.jpg",
+        "name": "Automobile Technology",
+        "countries": [
+          "Brazil",
+          "Chile",
+          "Colombia",
+          "Costa Rica",
+          "Dominican Republic",
+          "United States",
+          "Guatemala",
+          "Mexico",
+          "Peru"
+        ],
+        "photos": [
+          "33.jpg"
+        ],
+        "descriptions": {
+          "activities": "Disassemble, inspect, diagnose defects; regulate, assemble and perform the dimensional control of automotive engines. ",
+          "fields_of_work": "Automotive industry in general, automakers, utilities and machine shops.",
+          "qualities": "Constant search for technical specialization. - Initiative and creativity to solve challenges. - Spirit of teamwork."
+        }
+      }
+    ]
+  },
+  {
+    "category": "Construction and Building Technology",
+    "color": "d68e27",
+    "order": 2,
+    "skills": [
+      {
+        "number": "12",
+        "image": "12.jpg",
+        "name": "Wall and Floor Tiling",
+        "countries": [
+          "Netherlands Antilles",
+          "Argentina",
+          "Brazil",
+          "Colombia"
+        ],
+        "photos": [],
+        "descriptions": {
+          "activities": "Coating of walls, floors and stairs with ceramic plates, such as tiles and chips, according to technical standards, measurements and specifications of different projects. ",
+          "fields_of_work": "Construction and general services, industrial, commercial or service industries.",
+          "qualities": "Knowing how to communicate clearly and objectively with clients, superiors and colleagues. - Creativity and ability to work with different materials. - Organization."
+        }
+      },
+      {
+        "number": "15",
+        "image": "15.jpg",
+        "name": "Plumbing and Heating",
+        "countries": [
+          "Argentina",
+          "Brazil",
+          "Chile",
+          "Paragay"
+        ],
+        "photos": [
+          "15-1.jpg",
+          "15.jpg"
+        ],
+        "descriptions": {
+          "activities": "Installs and performs preventive and corrective maintenance on pipes and connections, hydraulic and gas accessories and equipment in buildings. ",
+          "fields_of_work": "Civil construction companies in general.",
+          "qualities": "Hand skills and visual acuity to perform services with precision. - Ability to work in teams. - Rational use of materials and a good ability to read and interpret projects."
+        }
+      },
+      {
+        "number": "18",
+        "image": "18.jpg",
+        "name": "Electrical Installations",
+        "countries": [
+          "Argentina",
+          "Bolivia",
+          "Brazil",
+          "Chile",
+          "Colombia",
+          "Costa Rica",
+          "Guatemala",
+          "Honduras",
+          "Mexico",
+          "Panama",
+          "Paragay"
+        ],
+        "photos": [
+          "18.jpg"
+        ],
+        "descriptions": {
+          "activities": "Installation and maintenance of circuits and electrical equipment in buildings, including building automation, assembly of low and high voltage networks, as well as substations and processors, in accordance to specific projects and technical documents. ",
+          "fields_of_work": "Electric power utilities, telephone companies and electrical installation and maintenance service providers.",
+          "qualities": "Creativity to provide solutions for the challenges faced in day-to-day work. - Security and flexibility in decision-making. - Concentration and organization."
+        }
+      },
+      {
+        "number": "20",
+        "image": "20.jpg",
+        "name": "Bricklaying",
+        "countries": [
+          "Argentina",
+          "Bolivia",
+          "Brazil",
+          "Colombia"
+        ],
+        "photos": [
+          "20.jpg"
+        ],
+        "descriptions": {
+          "activities": "Activities performed: preparing mortar, building internal and external masonry structures, install insulation in masonry walls. ",
+          "fields_of_work": "Fields of work: in residential and commercial civil construction projects.",
+          "qualities": "Qualities essential to the market concentration and accuracy, blueprint and design reading, quality and safety work"
+        }
+      },
+      {
+        "number": "21",
+        "image": "21.jpg",
+        "name": "Plastering and Drywall Systems",
+        "countries": [
+          "Netherlands Antilles",
+          "Argentina",
+          "Brazil",
+          "Colombia"
+        ],
+        "photos": [
+          "21.jpg"
+        ],
+        "descriptions": {
+          "what_they_do": "Incorporates lifting light structures with drywall or cement , including floating structures of buildings , floors , walls , ceilings , roofs skies , curved walls , industrial finishes, art and decoration, plaster moldings , timber structures and management of acoustic systems and thermal ."
+        }
+      },
+      {
+        "number": "24",
+        "image": "24.jpg",
+        "name": "Cabinetmaking",
+        "countries": [
+          "Brazil",
+          "Costa Rica",
+          "United States"
+        ],
+        "photos": [
+          "24.JPG"
+        ],
+        "descriptions": {
+          "activities": "Based on an existing project, the carpenter plans and executes the construction and repairing of furniture, equipment and parts made of wood and wood products. Applies coatings to restore or repair furniture, equipment and parts made of wood and wood products. ",
+          "fields_of_work": "Furniture, wood product and civil construction companies.",
+          "qualities": "Creativity to innovate on products. - Ability to negotiate with clients, ranging from the planning process to the conversion and restoration of furniture. - Spatial vision, concepts of geometry and mathematics."
+        }
+      },
+      {
+        "number": "38",
+        "image": "38.jpg",
+        "name": "Refrigeration and Air Conditioning",
+        "countries": [
+          "Brazil",
+          "Colombia",
+          "Guatemala",
+          "Panama",
+          "Paragay"
+        ],
+        "photos": [
+          "38.jpg"
+        ],
+        "descriptions": {
+          "activities": "Interpret, implement and oversee cooling and ventilation projects, specify materials and accessories, identify and fix leaks. ",
+          "fields_of_work": "Industrial, commercial and automotive refrigeration and residential air conditioning establishments and repair shops.",
+          "qualities": "Organization aimed at greater productivity and a lower risk of work accidents and losses. - Ability and motivation to work in teams. - Responsibility of meeting quality and control standards."
+        }
+      }
+    ]
+  },
+  {
+    "category": "Manufacturing and Engineering Technology",
+    "color": "6097",
+    "order": 3,
+    "skills": [
+      {
+        "number": "1",
+        "image": "01.jpg",
+        "name": "Polymechanics/Automation",
+        "countries": [
+          "Brazil",
+          "Colombia",
+          "Mexico",
+          "Peru"
+        ],
+        "photos": [
+          "01.jpg"
+        ],
+        "descriptions": {
+          "activities": "Manufacture, install and perform maintenance on mechanical parts and assemblies. Assembles automated components and systems, such as programmable controllers and elements having to do with control and pneumatic, hydraulic and electric movement. ",
+          "fields_of_work": "Automation industry.",
+          "qualities": "Spirit of teamwork. - Constant search for technological updates. - Good ability to read and interpret drawings and projects. - Knowledge of industry standards and procedures."
+        }
+      },
+      {
+        "number": "3",
+        "image": "03.jpg",
+        "name": "Manufacturing Team Challenge",
+        "countries": [],
+        "photos": [
+          "03.jpg"
+        ],
+        "descriptions": {
+          "activities": "Conceive, design, build, test and adjust prototypes that meet a set of pre-established requirements, generating the necessary records and pursuing the rational use of resources. ",
+          "fields_of_work": "Industries and businesses related to industrial automation.",
+          "qualities": "Good ability to adapt to new technologies. - Knowledge of industry standards and procedures. - Knowing how to read technical literature in a foreign language. - Spirit of teamwork."
+        }
+      },
+      {
+        "number": "4",
+        "image": "04.jpg",
+        "name": "Mechatronics",
+        "countries": [
+          "Brazil",
+          "Chile",
+          "Colombia",
+          "El Salvador",
+          "Guatemala",
+          "Mexico",
+          "Peru"
+        ],
+        "photos": [
+          "04.jpg"
+        ],
+        "descriptions": {
+          "activities": "Participate in the process of developing automated systems, such as robots, equipment operating with the help of software and production lines. Evaluate and specify machine components and supervise prototype construction. ",
+          "fields_of_work": "The automotive, electronics, mechanics and chemistry industries, among others.",
+          "qualities": "Being constantly updated on technology. - Organization. - Ability to work in teams."
+        }
+      },
+      {
+        "number": "5",
+        "image": "05.jpg",
+        "name": "Mechanical Engineering Design â¬\u001c CAD",
+        "countries": [
+          "Brazil",
+          "Chile",
+          "Colombia",
+          "Guatemala"
+        ],
+        "photos": [
+          "05.jpg"
+        ],
+        "descriptions": {
+          "activities": "Creation of drawings, projections and cuts using electronic media. Prepare work sheets and detailed diagrams of machinery, mechanical projects and parts containing the information necessary for their production and documentation. ",
+          "fields_of_work": "Assembly lines and manufacturers of parts and equipment. Creation of",
+          "qualities": "Learning to read technical literature in a foreign language. - Knowledge of technical standards and industry specifications. - Being constantly updated on technology."
+        }
+      },
+      {
+        "number": "6",
+        "image": "06.jpg",
+        "name": "CNC Turning",
+        "countries": [
+          "Brazil",
+          "Colombia",
+          "Costa Rica",
+          "El Salvador",
+          "Mexico"
+        ],
+        "photos": [
+          "06.jpg"
+        ],
+        "descriptions": {
+          "activities": "Preparation, adjustment, operation and control of parameters for manufacturing CNC parts, according to project specifications and industry standards. ",
+          "fields_of_work": "Manufacture of machinery and equipment.",
+          "qualities": "Constant technological updates. - Concentration and accuracy. - Knowing how to read technical drawings and designs. - Caring for the companyâ¬s assets, avoiding the misuse of equipment and machinery."
+        }
+      },
+      {
+        "number": "7",
+        "image": "07.jpg",
+        "name": "CNC Milling",
+        "countries": [
+          "Brazil",
+          "Colombia",
+          "Costa Rica",
+          "Dominican Republic",
+          "Mexico"
+        ],
+        "photos": [
+          "07.jpg"
+        ],
+        "descriptions": {
+          "activities": "Preparation, adjustment, operation and control of cutting parameters for mechanical parts and assemblies. CNC milling machines are used for milling parts of metallic, plastic and composite materials. ",
+          "fields_of_work": "Machine and equipment manufacturing.",
+          "qualities": "Good ability to adapt to new technologies. - Systemic view of the production process. - Knowing how to read technical literature in a foreign language. - Caring for the companyâ¬s assets, avoiding the misuse of equipment and machinery."
+        }
+      },
+      {
+        "number": "10",
+        "image": "10.jpg",
+        "name": "Welding",
+        "countries": [
+          "Netherlands Antilles",
+          "Bolivia",
+          "Brazil",
+          "Chile",
+          "Colombia",
+          "Costa Rica",
+          "Guatemala",
+          "Honduras",
+          "Mexico",
+          "Panama",
+          "Peru"
+        ],
+        "photos": [
+          "10.jpg"
+        ],
+        "descriptions": {
+          "activities": "Welding and cutting of metals and composites in accordance with design specifications. Perform visual inspection of pieces, identifying welding positions, applying removers, pre-warming with blowtorch cutters, brush and shaping pieces. ",
+          "fields_of_work": "Manufacturers of metal structures and parts, civil construction industry, metallurgy, automation, machinery and equipment.",
+          "qualities": "Visual acuity to perform the welding processes accurately and precisely and to identify irregularities in the parts produced. - Good physical endurance, as the worker may be in uncomfortable positions for long periods. - Keeping constantly updated on new welding techniques."
+        }
+      },
+      {
+        "number": "16",
+        "image": "16.jpg",
+        "name": "Electronics",
+        "countries": [
+          "Brazil",
+          "Chile",
+          "Colombia",
+          "Dominican Republic",
+          "Guatemala",
+          "Honduras",
+          "Mexico",
+          "Panama",
+          "Peru"
+        ],
+        "photos": [
+          "16.jpg"
+        ],
+        "descriptions": {
+          "activities": "Install, inspect and test electronic components, identify shortcomings, program equipment and perform preventive and corrective maintenance of equipment through measurements, calibration and tests. ",
+          "fields_of_work": "Manufacturers of machinery and equipment, electrical components, electronics, communications equipment and microcomputers.",
+          "qualities": "Constant professional training. - Concentration and attention to conduct oneâ¬s activities, as workers often have to work under pressure. - Commitment to the goals of the business and professional secrecy."
+        }
+      },
+      {
+        "number": "19",
+        "image": "19.jpg",
+        "name": "Industrial Control",
+        "countries": [
+          "Brazil",
+          "Chile",
+          "Colombia",
+          "El Salvador",
+          "Guatemala",
+          "Mexico",
+          "Peru"
+        ],
+        "photos": [],
+        "descriptions": {
+          "what_they_do": "This ability uses basic applications and industrial automation power , installation of ducts , control boxes , cables and automatic devices , applying control circuits , power , and industrial automation , Human Machine Interfaces (HMI ) , programmable logic and industrial communications ."
+        }
+      },
+      {
+        "number": "23",
+        "image": "23.jpg",
+        "name": "Mobile Robotics",
+        "countries": [
+          "Brazil",
+          "Chile",
+          "Colombia",
+          "Mexico"
+        ],
+        "photos": [
+          "23.jpg"
+        ],
+        "descriptions": {
+          "activities": "Design, assembly and programming of robots and automation systems capable of performing a wide array of tasks, such as robotic lawn-mowers and house-cleaning robots. ",
+          "fields_of_work": "Automation industry and technological education sectors.",
+          "qualities": "Good programming and systems automation skills. - Willingness to continually be up-to-date on technology. - Knowing how to read technical literature in a foreign language."
+        }
+      },
+      {
+        "number": "47",
+        "image": "47.jpg",
+        "name": "Turning",
+        "countries": [
+          "Bolivia",
+          "Brazil",
+          "Chile",
+          "Costa Rica",
+          "Guatemala",
+          "Honduras",
+          "Mexico"
+        ],
+        "photos": [
+          "47-1.jpg",
+          "47-2.jpg",
+          "47-3.jpg",
+          "47-4.jpg",
+          "47-5.jpg",
+          "47.jpg"
+        ],
+        "descriptions": {
+          "activities": "Preparation, adjustment of lathes and manufacturing of replacement parts and maintenance, according to project specifications and industry standards. ",
+          "fields_of_work": "Manufacture Industry of machinery and equipment.",
+          "qualities": "Concentration and accuracy. - Blueprint and designs reading. - Caring for the companyâ¬s assets, avoiding the misuse of equipment and machinery"
+        }
+      },
+      {
+        "number": "48",
+        "image": "48.jpg",
+        "name": "Milling",
+        "countries": [
+          "Brazil",
+          "Chile",
+          "Costa Rica",
+          "Guatemala",
+          "Honduras"
+        ],
+        "photos": [
+          "48-1.jpg",
+          "48-2.jpg"
+        ],
+        "descriptions": {
+          "activities": "Preparation, adjustment and operation of mechanical parts and assemblies machining. for milling parts of metallic, plastic and composite materials Preparation, adjustment of lathes and manufacturing of replacement parts and maintenance, according to project specifications and industry standards. ",
+          "fields_of_work": "Industry of machining and manufacturing of parts and maintenance of machinery and equipment.",
+          "qualities": "Concentration and accuracy. - Blueprint and designs reading. - Caring for the companyâ¬s assets, avoiding the misuse of equipment and machinery"
+        }
+      }
+    ]
+  },
+  {
+    "category": "Information and Communication Technology",
+    "color": "7e296d",
+    "order": 4,
+    "skills": [
+      {
+        "number": "2",
+        "image": "02.jpg",
+        "name": "Information Network Cabling",
+        "countries": [
+          "Netherlands Antilles",
+          "Brazil",
+          "Colombia",
+          "Mexico"
+        ],
+        "photos": [
+          "02.jpg"
+        ],
+        "descriptions": {
+          "activities": "Identify and implement solutions in Telecom. Install, connect, certify, optimize and perform maintenance of systems for transmitting data, voice and images, as well as computer networks. ",
+          "fields_of_work": "Telecommunications companies in general.",
+          "qualities": "Being constantly updated on technology. - Knowing how to read technical literature in a foreign language - Knowledge of the various interfaces between data transmission systems."
+        }
+      },
+      {
+        "number": "9",
+        "image": "09.jpg",
+        "name": "IT Software Solutions for Business",
+        "countries": [
+          "Brazil",
+          "Chile",
+          "Colombia",
+          "Dominican Republic",
+          "Guatemala",
+          "Mexico"
+        ],
+        "photos": [
+          "09.jpg"
+        ],
+        "descriptions": {
+          "activities": "Format and process information and business documents, spreadsheets and relational databases in a local environment, on a network or the Internet, provide support services and information security. ",
+          "fields_of_work": "This professional can work in almost all industry sectors and business.",
+          "qualities": "Companies look for IT professionals who are also able to develop the infrastructure of information technology. That is, supplying networks, connecting computers and developing systems. - Constant technological updates."
+        }
+      },
+      {
+        "number": "11",
+        "image": "11.jpg",
+        "name": "Print Media Technology",
+        "countries": [],
+        "photos": [],
+        "descriptions": {
+          "what_they_do": "Implicala production of printed material using an offset printing sheets , along with a digital printing machine and other equipment to the finished printed products , printing is responsible for print and produce all the material in the printing business ."
+        }
+      },
+      {
+        "number": "17",
+        "image": "17.jpg",
+        "name": "Web Design",
+        "countries": [
+          "Netherlands Antilles",
+          "Brazil",
+          "Colombia",
+          "Dominican Republic",
+          "Guatemala",
+          "Mexico"
+        ],
+        "photos": [
+          "17.jpg"
+        ],
+        "descriptions": {
+          "activities": "Creation, implementation, maintenance and fitting of Web sites to be used in multimedia environments using web architecture, such as Intranet and Internet, according to specified standards and the requirements identified in the clientâ¬s business. ",
+          "fields_of_work": "Multimedia companies and companies developing Intranet and Internet products; can also work as a freelance professional.",
+          "qualities": "Graphic creativity and sensitivity to develop web sites. - Seek out constant technological updates. - Organizational skills to meet deadlines and customersâ¬ demands."
+        }
+      },
+      {
+        "number": "39",
+        "image": "39.jpg",
+        "name": "IT Network Systems Administration",
+        "countries": [
+          "Brazil",
+          "Chile",
+          "Colombia",
+          "Guatemala",
+          "Mexico",
+          "Paragay"
+        ],
+        "photos": [
+          "39.jpg"
+        ],
+        "descriptions": {
+          "activities": "Plans, develops and provides technical assistance to projects involving the installation of communication networks among computers, seeking out the necessary resources and assessing system performance. ",
+          "fields_of_work": "Industrial, commercial and service companies that use computer equipment, Internet and Intranet.",
+          "qualities": "Learning to use computer resources and reading technical literature in a foreign language. - Rational use of materials. - Organization. - Creativity to do quality work and meet the clientâ¬s needs"
+        }
+      },
+      {
+        "number": "D01",
+        "image": "D01.jpg",
+        "name": "Mobile Apps Challenge",
+        "countries": [],
+        "photos": [
+          "D01-1.jpg",
+          "D01-2.jpg",
+          "D01-3.jpg",
+          "D01-4.jpg",
+          "D01.jpg"
+        ],
+        "descriptions": {
+          "what_they_do": "Mobile application development includes the design and development of software solutions for mobile devices such as smartphones and tablets with originality , innovation and creativity ."
+        }
+      }
+    ]
+  },
+  {
+    "category": "Creative Arts and Fashion",
+    "color": "388730",
+    "order": 5,
+    "skills": [
+      {
+        "number": "27",
+        "image": "27.jpg",
+        "name": "Jewellery",
+        "countries": [],
+        "photos": [
+          "27.jpg"
+        ],
+        "descriptions": {
+          "activities": "Shaping metals like gold, silver, copper and tin to make jewelry, costume jewelry, tools and other craft objects, using casting and annealing equipment. ",
+          "fields_of_work": "Companies that cut precious and semi-precious stones, gold and jewelry artifacts, as well as repair personal and household objects.",
+          "qualities": "Artistic creativity and sensitivity. - manual abilities and visual acuity. - Concentration, attention and precision."
+        }
+      },
+      {
+        "number": "31",
+        "image": "31.jpg",
+        "name": "Fashion Technology",
+        "countries": [
+          "Brazil",
+          "Colombia",
+          "Costa Rica"
+        ],
+        "photos": [],
+        "descriptions": {
+          "what_they_do": "This skill -building processes of clothing, using different materials and accessories , and industrial sewing machines and hand work techniques , to produce a product according to the parameters and defined requirements are developed."
+        }
+      },
+      {
+        "number": "40",
+        "image": "40.jpg",
+        "name": "Graphic Design Technology",
+        "countries": [
+          "Brazil",
+          "Chile",
+          "Colombia",
+          "Costa Rica",
+          "Guatemala",
+          "Mexico"
+        ],
+        "photos": [
+          "40.jpg"
+        ],
+        "descriptions": {
+          "activities": "Develop visual graphic identities, offset printing and pre-printing, such as posters, invitations, newspapers, magazines, brochures and catalogs. Operate equipment for the pre-printing of graphics products, and plan and control production processes. ",
+          "fields_of_work": "Printing companies and publishers.",
+          "qualities": "Learning to use computer resources and read technical literature in a foreign language. - Creativity to do quality work and satisfactorily meet the needs of the client. - Organization and some basic maintenance concepts. - Learn how to interpret technical standards."
+        }
+      },
+      {
+        "number": "46",
+        "image": "46.jpg",
+        "name": "Clothes Sewing",
+        "countries": [
+          "Bolivia",
+          "Brazil",
+          "Guatemala",
+          "Peru"
+        ],
+        "photos": [
+          "46-1.jpg",
+          "46-2.jpg",
+          "46-3.jpg",
+          "46-4.jpg",
+          "46.jpg"
+        ],
+        "descriptions": {
+          "what_they_do": "Is to develop , model and manufacture new products in 2D and 3D. When a new industrial product, it is designed based on a concept or prototype is developed. The final form of the new product is determined after extensive testing and modifications."
+        }
+      }
+    ]
+  },
+  {
+    "category": "Social and Personal Services",
+    "color": "b86516",
+    "order": 6,
+    "skills": [
+      {
+        "number": "29",
+        "image": "29.jpg",
+        "name": "Ladies/Mens Hairdressing",
+        "countries": [
+          "Barbados",
+          "Brazil",
+          "Costa Rica",
+          "Guatemala"
+        ],
+        "photos": [],
+        "descriptions": {
+          "what_they_do": "It consists of cutting , coloring , shape, style, hair people . Through counseling and professional hairdressing treatment strives to accentuate the overall appearance and personality of the client ."
+        }
+      },
+      {
+        "number": "32",
+        "image": "32.jpg",
+        "name": "Confectioner/Pastry Cook",
+        "countries": [
+          "Brazil",
+          "Costa Rica",
+          "El Salvador",
+          "Guatemala",
+          "Mexico"
+        ],
+        "photos": [],
+        "descriptions": {
+          "activities": "Activities performed: prepare and create a variety of elaborate and delicious products employing artistic talent as well as gastronomic flair. Fundamental ",
+          "fields_of_work": "Fields of work: bakeries, pastry shops and personal services areas",
+          "qualities": "Qualities essential to the market: creativity, concentration, ergonomics, health and safety regulations knowledge."
+        }
+      },
+      {
+        "number": "34",
+        "image": "34.jpg",
+        "name": "Cooking",
+        "countries": [
+          "Netherlands Antilles",
+          "Bolivia",
+          "Brazil",
+          "Chile",
+          "Colombia",
+          "Costa Rica",
+          "El Salvador",
+          "Guatemala",
+          "Mexico",
+          "Panama"
+        ],
+        "photos": [
+          "34.jpg"
+        ],
+        "descriptions": {
+          "what_they_do": "This skill incorporates components menu planning, plus the process of preparing a variety of foods according to health and safety rules and knowledge related to the administration of a commercial kitchen."
+        }
+      },
+      {
+        "number": "35",
+        "image": "35.jpg",
+        "name": "Restaurant Service",
+        "countries": [
+          "Netherlands Antilles",
+          "Brazil",
+          "Colombia",
+          "Costa Rica",
+          "Mexico",
+          "Panama"
+        ],
+        "photos": [],
+        "descriptions": {
+          "what_they_do": "It involves food and beverage service in fine dining restaurants , bar , cafes , hotels and others. Must prepare service tables , take orders , clean mixing and serving drinks, opening and serving wines, calculate invoices and receive payments . The servers are required to provide a high level to match the quality of the food served ."
+        }
+      },
+      {
+        "number": "41",
+        "image": "41.jpg",
+        "name": "Health and Social Care",
+        "countries": [
+          "Argentina",
+          "Brazil",
+          "Chile",
+          "Colombia",
+          "Mexico"
+        ],
+        "photos": [
+          "41-1.jpg",
+          "41-2.jpg",
+          "41-3.jpg",
+          "41-4.jpg",
+          "41.jpg"
+        ],
+        "descriptions": {
+          "what_they_do": "It includes a wide range of activities in which abilities and skills related to supporting the growth and development , physical and psychosocial health, care during illness , recovery and rehabilitation in the different age groups are shown ."
+        }
+      },
+      {
+        "number": "C01",
+        "image": "C01.jpg",
+        "name": "Bartending",
+        "countries": [],
+        "photos": [
+          "C01-2.jpg",
+          "C01-3.jpg",
+          "C01-4.jpg",
+          "C01.jpg"
+        ],
+        "descriptions": {
+          "what_they_do": "It involves food and beverage service in fine dining restaurants , bar , cafes , hotels and others. Must prepare service tables , take orders , clean mixing and serving drinks, opening and serving wines, calculate invoices and receive payments . The servers are required to provide a high level to match the quality of the food served ."
+        }
+      }
+    ]
+  }
+]

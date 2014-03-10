@@ -3,7 +3,7 @@ var db = require('../models');
 var util = require('util');
 var _ = require('lodash');
 
-var lang = 'es';
+var lang = 'pt';
 
 function getSQL (lang) {
   return "SELECT s.number as number" +
