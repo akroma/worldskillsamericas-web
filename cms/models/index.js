@@ -8,7 +8,11 @@ var fs        = require('fs'),
 
 function hasMany (parent, child, alias) {
   if (parent && child) {
-    parent.hasMany(child, { as: alias });
+    if (alias) {
+      parent.hasMany(child, { as: alias });
+    } else {
+      parent.hasMany(child);
+    }
   }
 }
 
@@ -28,7 +32,12 @@ Object.keys(db).forEach(function(modelName) {
   }
 });
 
-hasMany(db.SkillCategory, db.Skill, 'skills');
+hasMany(db.SkillCategory, db.Skill);
+hasMany(db.Skill, db.Picture);
+hasMany(db.Skill, db.SkillDescription);
+
+hasMany(db.Skill, db.Country);
+hasMany(db.Country, db.Skill);
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;

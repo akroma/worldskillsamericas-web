@@ -1,0 +1,26 @@
+﻿Id;Number;name_br;name_en;name_es;picture;skill_group_id
+1;1;Polimecânica;Polymechanics/Automation;Polimecánica / Automatización;01.jpg;4
+2;2;Cabeamento de Redes de Informação;Information Network Cabling;Cableado de Redes de Información;02.jpg;3
+3;3;Manufatura Integrada;Manufacturing Team Challenge;Reto Fabricación por Equipos;03.jpg;4
+4;4;Mecatrônica;Mechatronics;Mecatrónica;04.jpg;4
+5;5;Desenho Mecânico Assistido por Computador - CAD;Mechanical Engineering Design – CAD;Diseño de Ingeniería Mecánica – CAD;05.jpg;4
+6;6;Tornearia a CNC;CNC Turning;Torno CNC;06.jpg;4
+7;7;Fresagem a CNC;CNC Milling;Fresa CNC;07.jpg;4
+8;9;TI Soluções de Software para Empresas;IT Software Solutions for Business;TI Soluciones de Software para Negocios;09.jpg;3
+9;10;Soldagem;Welding;Soldadura;10.jpg;4
+10;12;Aplicação de Revestimentos Cerâmicos;Wall and Floor Tiling;Pared y Piso de Baldosa;12.jpg;1
+11;15;Instalações Hidráulicas e a Gás;Plumbing and Heating;Fontanería y Calefacción;15.jpg;1
+12;16;Eletrônica;Electronics;Electrónica;16.jpg;4
+13;17;Web Design;Web Design;Diseño Web;17.jpg;3
+14;18;Instalações Elétricas;Electrical Installations;Instalaciones Eléctricas;18.jpg;1
+15;20;Construção em Alvenaria;Bricklaying;Albañileria / Mampostería;20.jpg;1
+16;23;Robótica Móvel;Mobile Robotics;Robótica Móvil;23.jpg;4
+17;24;Movelaria;Cabinetmaking;Ebanistería;24.jpg;1
+18;27;Joalheria;Jewellery;Joyería;27.jpg;2
+19;32;Confeitaria;Confectioner/Pastry Cook;Confitería / Pastelería;32.jpg;5
+20;33;Tecnologia Automotiva;Automobile Technology;Tecnología Automótriz;33.jpg;6
+21;38;Refrigeração e Ar Condicionado;Refrigeration and Air Conditioning;Refrigeración y Aire Acondicionado;38.jpg;1
+22;39;TI Administração de Sistemas de Redes;IT Network Systems Administration;TI Administración de Sistemas de Redes;39.jpg;3
+23;40;Design Gráfico;Graphic Design Technology;Tecnología de Diseño Gráfico;40.jpg;3
+24;47;Tornearia;Turning;Torno Convencional;47.jpg;4
+25;48;Fresagem;Milling;Fresado Convencional;48.jpg;4
