@@ -72,7 +72,7 @@ var syncOpts = {};
 
 // rebuild db for dev
 if (app.get('env') == 'development') {
-	syncOpts.force = true;
+	// syncOpts.force = true;
 }
 
 db.sequelize
