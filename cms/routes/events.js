@@ -35,7 +35,7 @@ function transformByParams (entities, queryString) {
     entities.events = entities.events.filter(dateFilter);
   }
 
-  if (queryString.group) {
+  if (queryString.groupByDay) {
     entities.events = dataUtils.groupByDay(entities.events, 'start');
   }
 
