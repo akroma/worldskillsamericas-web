@@ -16,7 +16,7 @@ function transformByParams (entities, queryString) {
 	var dateFilter = null;
 	if (queryString.since) {
 		dateFilter = function (n) {
-      return moment(n.created_at).isAfter(queryString.since);
+			return moment(n.created_at).isAfter(queryString.since);
 		}
 	}
 	entities.news.map(function (n) {

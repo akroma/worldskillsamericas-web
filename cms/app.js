@@ -8,6 +8,7 @@ var http = require('http');
 var path = require('path');
 var news = require('./routes/news');
 var events = require('./routes/events');
+var sponsors = require('./routes/sponsors');
 var db = require('./models');
 var formidable = require('formidable');
 var mkdirp = require('mkdirp');
@@ -55,6 +56,8 @@ app.get('/events', events.index);
 app.post('/events', events.add);
 app.get('/events/add', events.addForm);
 app.get('/events.json', events.json);
+
+app.get('/sponsors.json', sponsors.json);
 
 
 // create path for images

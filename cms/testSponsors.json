@@ -1,0 +1,32 @@
+{
+  "sponsors": {
+    "official": [
+      {
+        "name": "Sponsor Official",
+        "image": "http://suicobrasileira.com.br:3000/images/sponsors/official.jpg"
+      }
+    ],
+    "gold": [
+      {
+        "name": "Sponsor Gold",
+        "image": "http://suicobrasileira.com.br:3000/images/sponsors/gold.jpg"
+      }
+    ],
+    "silver": [
+      {
+        "name": "Sponsor Silver",
+        "image": "http://suicobrasileira.com.br:3000/images/sponsors/silver.jpg"
+      }
+    ],
+    "bronze": [
+      {
+        "name": "Sponsor Bronze",
+        "image": "http://suicobrasileira.com.br:3000/images/sponsors/bronze.jpg"
+      },
+      {
+        "name": "Sponsor Bronze",
+        "image": "http://suicobrasileira.com.br:3000/images/sponsors/bronze.jpg"
+      }
+    ]
+  }
+}

@@ -29,7 +29,7 @@ switch(process.env.node_env) {
   default:
     exports.port = 3000;
     exports.interfaceName = 'Ethernet';
-    exports.baseUrl = localIp(exports.interfaceName) + ':' + exports.port;
+    exports.baseUrl =  '172.31.0.12:' + exports.port;
     exports.db = {
       user : 'root',
       password : 'Senai115',
