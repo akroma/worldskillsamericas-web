@@ -8,6 +8,9 @@ function localIp (interfaceName) {
   })[0].address;
 }
 
+exports.user = 'wsa2014';
+exports.password = 'wsa822533';
+
 switch(process.env.node_env) {
   case 'production':
     exports.port = 3000;

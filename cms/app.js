@@ -47,22 +47,24 @@ function uploadImage (uploadDir) {
 	};
 }
 
+var auth = express.basicAuth(config.user, config.password);
+
 app.get('/', routes.index);
 
 app.get('/news', news.index);
-app.post('/news', uploadImage('/public/images/news/'), news.add);
-app.get('/news/add', news.addForm);
+app.post('/news', auth, uploadImage('/public/images/news/'), news.add);
+app.get('/news/add', auth, news.addForm);
 app.get('/news.json', news.json);
 
 app.get('/events', events.index);
-app.post('/events', events.add);
-app.get('/events/add', events.addForm);
+app.post('/events', auth, events.add);
+app.get('/events/add', auth, events.addForm);
 app.get('/events.json', events.json);
 
-app.del('/sponsors/:id', sponsors.del);
+app.del('/sponsors/:id', auth, sponsors.del);
 app.get('/sponsors', sponsors.index);
-app.get('/sponsors/add', sponsors.addForm);
-app.post('/sponsors', uploadImage('/public/images/sponsors/'), sponsors.add);
+app.get('/sponsors/add', auth, sponsors.addForm);
+app.post('/sponsors', auth, uploadImage('/public/images/sponsors/'), sponsors.add);
 app.get('/sponsors.json', sponsors.json);
 
 
