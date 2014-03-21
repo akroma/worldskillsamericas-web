@@ -59,6 +59,7 @@ app.post('/events', events.add);
 app.get('/events/add', events.addForm);
 app.get('/events.json', events.json);
 
+app.del('/sponsors/:id', sponsors.del);
 app.get('/sponsors', sponsors.index);
 app.get('/sponsors/add', sponsors.addForm);
 app.post('/sponsors', uploadImage('/public/images/sponsors/'), sponsors.add);

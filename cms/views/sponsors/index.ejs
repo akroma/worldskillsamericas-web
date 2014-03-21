@@ -3,14 +3,20 @@
 	<a class="btn btn-primary" href="/sponsors/add">Add Sponsor</a>
 </p>
 <section id="sponsors">
-<% for(g in sponsors) { %>
-	<h2><%= g %><h2>
-	<% var group = sponsors[g] %>
-	<% group.forEach(function(s) { %>
-		<article>
+	<% for(g in sponsors) { %>
+	<h2><%= g %> Sponsors<h2>
+	<hr>
+		<% var group = sponsors[g] %>
+		<% group.forEach(function(s) { %>
+		<article class="row">
 			<h3><%= s.name %></h3>
-			<img src="<%= s.picture %>" width="480px" alt="Sponsor Logo">
+			<img class="col-md-4" src="<%= s.picture %>" width="480px" alt="Sponsor Logo">
+			<form class="form col-md-1" method="POST" action="/sponsors/<%= s.id %>">
+				<input type="submit" class="btn btn-danger" value="Delete">
+				<input type="hidden" name="_method" value="delete">
+			</form>
 		</article>
-	<% }) %>
-<% } %>
-</section>
+		<% }) %>
+		<% } %>
+
+	</section>

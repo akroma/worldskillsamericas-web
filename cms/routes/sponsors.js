@@ -39,9 +39,6 @@ exports.addForm = function (req, res) {
 };
 
 exports.add = function (req, res) {
-	function finish () {
-		res.redirect(303, '/news');
-	}
 
 	var baseUrl = 'http://' + config.imageHost + '/images/sponsors/';
 
@@ -54,7 +51,7 @@ exports.add = function (req, res) {
 		sponsor.picture = baseUrl + filename;
 		
 		sponsor.save().success(function () {
-			res.redirect(303, '/sponsors')
+			res.redirect(303, '/sponsors');
 		});
 	} else {
 		var locals = {};
@@ -72,5 +69,12 @@ exports.json = function (req, res) {
 	readSponsors(function (json) {
 		transformByParams(json, q);
 		res.json(json);
+	});
+};
+
+exports.del = function (req, res) {
+	var id = req.params.id;
+	db.Sponsor.destroy({id: id}).success(function () {
+		res.redirect('/sponsors');
 	});
 };
