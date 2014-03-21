@@ -1,19 +1,19 @@
 /**
  * Module dependencies.
  */
-'use strict';
-var express = require('express');
-var routes = require('./routes');
-var http = require('http');
-var path = require('path');
-var news = require('./routes/news');
-var events = require('./routes/events');
-var sponsors = require('./routes/sponsors');
-var db = require('./models');
-var formidable = require('formidable');
-var mkdirp = require('mkdirp');
-var app = express();
-var config = require('./config');
+ 'use strict';
+ var express = require('express');
+ var routes = require('./routes');
+ var http = require('http');
+ var path = require('path');
+ var news = require('./routes/news');
+ var events = require('./routes/events');
+ var sponsors = require('./routes/sponsors');
+ var db = require('./models');
+ var formidable = require('formidable');
+ var mkdirp = require('mkdirp');
+ var app = express();
+ var config = require('./config');
 
 
 // all environments
@@ -34,21 +34,23 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.errorHandler());
 
 
-function uploadNewsImage (req, res, next) {
-	var form = formidable.IncomingForm();
-	form.keepExtensions = true;
-	form.uploadDir = __dirname + '/public/images/news/';
-	form.parse(req, function (err, fields, files) {
-		req.body = fields;
-		req.files = files;
-		next();
-	});
+function uploadImage (uploadDir) {
+	return function (req, res, next) {
+		var form = formidable.IncomingForm();
+		form.keepExtensions = true;
+		form.uploadDir = __dirname + uploadDir;
+		form.parse(req, function (err, fields, files) {
+			req.body = fields;
+			req.files = files;
+			next();
+		});
+	};
 }
 
 app.get('/', routes.index);
 
 app.get('/news', news.index);
-app.post('/news', uploadNewsImage, news.add);
+app.post('/news', uploadImage('/public/images/news/'), news.add);
 app.get('/news/add', news.addForm);
 app.get('/news.json', news.json);
 
@@ -57,16 +59,17 @@ app.post('/events', events.add);
 app.get('/events/add', events.addForm);
 app.get('/events.json', events.json);
 
+app.get('/sponsors', sponsors.index);
+app.get('/sponsors/add', sponsors.addForm);
+app.post('/sponsors', uploadImage('/public/images/sponsors/'), sponsors.add);
 app.get('/sponsors.json', sponsors.json);
 
 
 // create path for images
-mkdirp(__dirname + '/public/images/news', function (err) {
-	if (err){
-		throw err;
-	} else {
-		console.log('News images upload directory created successfully');
-	}
+mkdirp(__dirname + '/public/images/news', function () {
+	mkdirp(__dirname + '/public/images/sponsors', function () {
+		console.log('Images upload directories created successfully');
+	});
 });
 
 //Initialize sequelize

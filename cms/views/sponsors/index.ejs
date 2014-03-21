@@ -1,0 +1,16 @@
+<h2>Existing Sponsors</h2>
+<p>
+	<a class="btn btn-primary" href="/sponsors/add">Add Sponsor</a>
+</p>
+<section id="sponsors">
+<% for(g in sponsors) { %>
+	<h2><%= g %><h2>
+	<% var group = sponsors[g] %>
+	<% group.forEach(function(s) { %>
+		<article>
+			<h3><%= s.name %></h3>
+			<img src="<%= s.picture %>" width="480px" alt="Sponsor Logo">
+		</article>
+	<% }) %>
+<% } %>
+</section>
