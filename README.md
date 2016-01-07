@@ -22,7 +22,7 @@ API
 
 ### Parametros querystring
 
-- `since=yyyy-mm-ddThh:mm:ssZ` - Entities since date given, the T is a literal, using GMT+0
+- `since=yyyy-mm-ddThh:mm:ssZ` - Entidade since indica a data, o T é um literal, usando GMT+0
 - `lang=[pt|en|es]` - Localizado em `body`
 - `groupByDay=true` - agrupar resultados por dia, apenas para eventos
 
