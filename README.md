@@ -1,38 +1,38 @@
 App WSA2014 - BackEnd
 ===
 
-Backend for the WSA2014 mobile app
+Backend para o aplicativo móvel da WSA2014
 
-Run
+Execute
 ---
-In order to run the server, execute the following steps:
+Na ordem de execução do servidor, sigua as etapas a seguir:
 
-1. Install [node.js](http://nodejs.org/).
-2. Install all js dependencies - `cms\ $ npm install`
-3. Run the app inside **\cms** - `cms\ $ node app.js`
-4. The app will start at [localhost:3000](http://localhost:3000)
+1. Instale [node.js](http://nodejs.org/).
+2. Instale todas as dependencias JS - `cms\ $ npm install`
+3. Execute a aplicação em **\cms** - `cms\ $ node app.js`
+4. A aplicação irá iniciar em [localhost:3000](http://localhost:3000)
 
-In development mode, *config.js* tries to find out your LAN ip in order to supply an address to uploaded photos, feel free to hardcode the ip in for development.
-*productionServer.bat* runs the server in production mode -- syntax for windows systems.
+No modo desenvolvedor, *config.js* tente procurar o seu endereço de IP LAN, para que possa trocar o envio de fotos, sinta-se livre para alterar o ip para desenvolvimento.
+*productionServer.bat* Execute o servidor em modo de produção -- sintax para sistemas windows.
 
 API
 ---
-`/news.json` - News
-`/events.json` - Events (unimplemented so far)
+`/news.json` - Novidades
+`/events.json` - Eventos (unimplemented so far)
 
-### Querystring params
+### Parametros querystring
 
 - `since=yyyy-mm-ddThh:mm:ssZ` - Entities since date given, the T is a literal, using GMT+0
-- `lang=[pt|en|es]` - Locale for `body`
-- `groupByDay=true` - groups results by day, only for events
+- `lang=[pt|en|es]` - Localizado em `body`
+- `groupByDay=true` - agrupar resultados por dia, apenas para eventos
 
-A development version of the server app runs at [http://wsaapp.suicobrasileira.com.br:3000/]()
+A versão de desenvolvimento do aplicativo rodará no servidor [http://wsaapp.suicobrasileira.com.br:3000/]()
 
-Entities
+Entidades
 ---
 
-### News
-Has the following structure:
+### Notícia
+Possui a seguinte estrutura:
 ``` javascript
 {
   "news": [
@@ -58,8 +58,8 @@ Has the following structure:
 - `body`: One of the three above selected using the `lang` querystring param; eg. `lang=en` would make **body == body_en**
 - `date`: Publication date of the article, currently based on `created_at`
 
-### Events
-Has the following structure (with `lang=en`):
+### Eventos
+Possui a seguinte estrutura (em `lang=en`):
 
 ``` javascript
 {
