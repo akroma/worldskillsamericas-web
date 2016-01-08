@@ -5,20 +5,21 @@ Backend para o aplicativo móvel da WSA2014
 
 Execute
 ---
-Na ordem de execução do servidor, sigua as etapas a seguir:
+Para executar o servidor, siga as etapas a seguir:
 
 1. Instale [node.js](http://nodejs.org/).
 2. Instale todas as dependencias JS - `cms\ $ npm install`
 3. Execute a aplicação em **\cms** - `cms\ $ node app.js`
-4. A aplicação irá iniciar em [localhost:3000](http://localhost:3000)
+4. A aplicação estará disponível em [localhost:3000](http://localhost:3000)
 
-No modo desenvolvedor, *config.js* tente procurar o seu endereço de IP LAN, para que possa trocar o envio de fotos, sinta-se livre para alterar o ip para desenvolvimento.
-*productionServer.bat* Execute o servidor em modo de produção -- sintax para sistemas windows.
+No modo de desenvolvimento, *config.js* tenta determinar o seu endereço de IP LAN, para que possa realizar o envio de fotos. Sinta-se livre para determinar um ip fixo para debugging.
+
+*productionServer.bat* Executa o servidor em modo de produção -- sintaxe para sistemas windows.
 
 API
 ---
-`/news.json` - Novidades
-`/events.json` - Eventos (unimplemented so far)
+`/news.json` - Notícias
+`/events.json` - Eventos (não implementado)
 
 ### Parametros querystring
 
