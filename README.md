@@ -3,6 +3,10 @@ App WSA2014 - BackEnd
 
 Backend for the WSA2014 mobile app
 
+Open Source
+---
+This project was open sourced aiming for reuse by other competitions in the same WorldSkills model with minimal customization (mostly on the client available at [https://github.com/akroma/worldskillsamericas-mobile-app](https://github.com/akroma/worldskillsamericas-mobile-app)).
+
 Run
 ---
 In order to run the server, execute the following steps:
