@@ -1,39 +1,38 @@
 App WSA2014 - BackEnd
 ===
 
-Backend para o aplicativo móvel da WSA2014
+Backend for the WSA2014 mobile app
 
-Execute
+Run
 ---
-Para executar o servidor, siga as etapas a seguir:
+In order to run the server, execute the following steps:
 
-1. Instale [node.js](http://nodejs.org/).
-2. Instale todas as dependencias JS - `cms\ $ npm install`
-3. Execute a aplicação em **\cms** - `cms\ $ node app.js`
-4. A aplicação estará disponível em [localhost:3000](http://localhost:3000)
+1. Install [node.js](http://nodejs.org/).
+2. Install all js dependencies - `cms\ $ npm install`
+3. Run the app inside **\cms** - `cms\ $ node app.js`
+4. The app will start at [localhost:3000](http://localhost:3000)
 
-No modo de desenvolvimento, *config.js* tenta determinar o seu endereço de IP LAN, para que possa realizar o envio de fotos. Sinta-se livre para determinar um ip fixo para debugging.
-
-*productionServer.bat* Executa o servidor em modo de produção -- sintaxe para sistemas windows.
+In development mode, *config.js* tries to find out your LAN ip in order to supply an address to uploaded photos, feel free to hardcode the ip in for development.
+*productionServer.bat* runs the server in production mode -- syntax for windows systems.
 
 API
 ---
-`/news.json` - Notícias
-`/events.json` - Eventos (não implementado)
+`/news.json` - News
+`/events.json` - Events (unimplemented so far)
 
-### Parametros querystring
+### Querystring params
 
-- `since=yyyy-mm-ddThh:mm:ssZ` - Entidade since indica a data, o T é um literal, usando GMT+0
-- `lang=[pt|en|es]` - Localizado em `body`
-- `groupByDay=true` - agrupar resultados por dia, apenas para eventos
+- `since=yyyy-mm-ddThh:mm:ssZ` - Entities since date given, the T is a literal, using GMT+0
+- `lang=[pt|en|es]` - Locale for `body`
+- `groupByDay=true` - groups results by day, only for events
 
-A versão de desenvolvimento do aplicativo rodará no servidor [http://wsaapp.suicobrasileira.com.br:3000/]()
+A development version of the server app runs at [http://wsaapp.suicobrasileira.com.br:3000/]()
 
-Entidades
+Entities
 ---
 
-### Notícia
-Possui a seguinte estrutura:
+### News
+Has the following structure:
 ``` javascript
 {
   "news": [
@@ -59,8 +58,8 @@ Possui a seguinte estrutura:
 - `body`: One of the three above selected using the `lang` querystring param; eg. `lang=en` would make **body == body_en**
 - `date`: Publication date of the article, currently based on `created_at`
 
-### Eventos
-Possui a seguinte estrutura (em `lang=en`):
+### Events
+Has the following structure (with `lang=en`):
 
 ``` javascript
 {
